@@ -12,6 +12,18 @@ internal extension DefaultHomeViewController {
     func buildView() {
         title = Constant.title
         view.accessibilityIdentifier = Constant.accessibilityIdentifier
+        buildTableViewComponent()
+    }
+    
+    func buildTableViewComponent() {
+        let component = UITableView()
+        component.backgroundColor = .clear
+        component.bounces = false
+        component.separatorStyle = .none
+        component.delegate = tableManager
+        component.dataSource = tableManager
+//        component.register(UINib(nibName: ListPostsTableViewCell.getIdentifier(), bundle: nil), forCellReuseIdentifier: ListMoviesTableViewCell.getIdentifier())
+        tableView = component
     }
     
 }
