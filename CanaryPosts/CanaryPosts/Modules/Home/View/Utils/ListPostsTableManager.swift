@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol ListMoviesActions {
+protocol ListPostsActions {
     func somePostPressed(postID: String)
     func updateUI()
 }
@@ -15,7 +15,7 @@ protocol ListMoviesActions {
 class ListPostsTableManager: NSObject, UITableViewDelegate, UITableViewDataSource {
     
     private var dataSource: String?
-    var delegate: ListMoviesActions?
+    var delegate: ListPostsActions?
     
     func set(input: String) {
         dataSource = input

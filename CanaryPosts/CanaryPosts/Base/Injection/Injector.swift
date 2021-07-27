@@ -27,7 +27,7 @@ class Injector {
     }
     
     private func registerInteractors() {
-       
+        registerListPostsInteractorInjector()
     }
     
     private func registerModules() {

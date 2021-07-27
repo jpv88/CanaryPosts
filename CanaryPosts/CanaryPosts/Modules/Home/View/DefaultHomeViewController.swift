@@ -50,7 +50,7 @@ extension DefaultHomeViewController: HomeViewController {
 }
 
 // MARK: ListPostsActions Protocol
-extension DefaultHomeViewController: ListMoviesActions {
+extension DefaultHomeViewController: ListPostsActions {
     
     func somePostPressed(postID: String) {
 //        viewModel?.somePostPressed(movieID: movieID)

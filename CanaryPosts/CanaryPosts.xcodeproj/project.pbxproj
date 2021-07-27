@@ -37,6 +37,9 @@
 		7FFB4C2F26B03EFD00135823 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C2E26B03EFD00135823 /* Endpoint.swift */; };
 		7FFB4C3126B03F4900135823 /* GetListPosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C3026B03F4900135823 /* GetListPosts.swift */; };
 		7FFB4C3326B0405F00135823 /* PostListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C3226B0405F00135823 /* PostListModel.swift */; };
+		7FFB4C3526B046D600135823 /* Interactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C3426B046D600135823 /* Interactors.swift */; };
+		7FFB4C3726B046E300135823 /* ListPostsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C3626B046E300135823 /* ListPostsInteractor.swift */; };
+		7FFB4C3A26B0473E00135823 /* ListPostsInteractorInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C3926B0473E00135823 /* ListPostsInteractorInjector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +93,9 @@
 		7FFB4C2E26B03EFD00135823 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		7FFB4C3026B03F4900135823 /* GetListPosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetListPosts.swift; sourceTree = "<group>"; };
 		7FFB4C3226B0405F00135823 /* PostListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListModel.swift; sourceTree = "<group>"; };
+		7FFB4C3426B046D600135823 /* Interactors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactors.swift; sourceTree = "<group>"; };
+		7FFB4C3626B046E300135823 /* ListPostsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostsInteractor.swift; sourceTree = "<group>"; };
+		7FFB4C3926B0473E00135823 /* ListPostsInteractorInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostsInteractorInjector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +277,8 @@
 		7FFB4C0F26B02D3C00135823 /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
+				7FFB4C3426B046D600135823 /* Interactors.swift */,
+				7FFB4C3826B0471300135823 /* ListPosts */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -307,6 +315,15 @@
 				7FFB4C3026B03F4900135823 /* GetListPosts.swift */,
 			);
 			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		7FFB4C3826B0471300135823 /* ListPosts */ = {
+			isa = PBXGroup;
+			children = (
+				7FFB4C3626B046E300135823 /* ListPostsInteractor.swift */,
+				7FFB4C3926B0473E00135823 /* ListPostsInteractorInjector.swift */,
+			);
+			path = ListPosts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,6 +472,8 @@
 				7FFB4C0626B02BFB00135823 /* Colors.swift in Sources */,
 				7FFB4C2626B0374900135823 /* DefaultHomeCoordinator.swift in Sources */,
 				7FFB4BFD26B0288F00135823 /* DefaultHomeViewController.swift in Sources */,
+				7FFB4C3A26B0473E00135823 /* ListPostsInteractorInjector.swift in Sources */,
+				7FFB4C3526B046D600135823 /* Interactors.swift in Sources */,
 				7FFB4C1326B02D6C00135823 /* RegisterUtils.swift in Sources */,
 				7FFB4BC626B0251800135823 /* AppDelegate.swift in Sources */,
 				7FFB4C1726B0302D00135823 /* DefaultHomeViewController+BuildComponents.swift in Sources */,
@@ -464,6 +483,7 @@
 				7FFB4C0D26B02CAA00135823 /* UITableViewCell+Identifier.swift in Sources */,
 				7FFB4C1E26B0316F00135823 /* HomeViewController.swift in Sources */,
 				7FFB4C0B26B02C9E00135823 /* UIViewController+ActivityIndicator.swift in Sources */,
+				7FFB4C3726B046E300135823 /* ListPostsInteractor.swift in Sources */,
 				7FFB4C2F26B03EFD00135823 /* Endpoint.swift in Sources */,
 				7FFB4C2826B039F700135823 /* CoordinatorBase.swift in Sources */,
 				7FFB4BC826B0251800135823 /* SceneDelegate.swift in Sources */,
