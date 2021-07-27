@@ -44,7 +44,7 @@ extension DefaultHomeViewController: HomeViewController {
     
     
     func showLoadedInfo(input: PostListModel) {
-//        tableManager?.set(input: input)
+        tableManager?.set(input: input)
     }
         
 }

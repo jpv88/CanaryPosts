@@ -40,6 +40,8 @@
 		7FFB4C3526B046D600135823 /* Interactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C3426B046D600135823 /* Interactors.swift */; };
 		7FFB4C3726B046E300135823 /* ListPostsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C3626B046E300135823 /* ListPostsInteractor.swift */; };
 		7FFB4C3A26B0473E00135823 /* ListPostsInteractorInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C3926B0473E00135823 /* ListPostsInteractorInjector.swift */; };
+		7FFB4C3E26B04C2400135823 /* ListPostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C3C26B04C2400135823 /* ListPostsTableViewCell.swift */; };
+		7FFB4C3F26B04C2400135823 /* ListPostsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FFB4C3D26B04C2400135823 /* ListPostsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,8 @@
 		7FFB4C3426B046D600135823 /* Interactors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactors.swift; sourceTree = "<group>"; };
 		7FFB4C3626B046E300135823 /* ListPostsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostsInteractor.swift; sourceTree = "<group>"; };
 		7FFB4C3926B0473E00135823 /* ListPostsInteractorInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostsInteractorInjector.swift; sourceTree = "<group>"; };
+		7FFB4C3C26B04C2400135823 /* ListPostsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostsTableViewCell.swift; sourceTree = "<group>"; };
+		7FFB4C3D26B04C2400135823 /* ListPostsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPostsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +290,7 @@
 		7FFB4C1A26B0309800135823 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				7FFB4C3B26B04C0A00135823 /* Collections */,
 				7FFB4C1B26B0309F00135823 /* ListPostsTableManager.swift */,
 			);
 			path = Utils;
@@ -324,6 +329,15 @@
 				7FFB4C3926B0473E00135823 /* ListPostsInteractorInjector.swift */,
 			);
 			path = ListPosts;
+			sourceTree = "<group>";
+		};
+		7FFB4C3B26B04C0A00135823 /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				7FFB4C3C26B04C2400135823 /* ListPostsTableViewCell.swift */,
+				7FFB4C3D26B04C2400135823 /* ListPostsTableViewCell.xib */,
+			);
+			path = Collections;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FFB4BD526B0251900135823 /* LaunchScreen.storyboard in Resources */,
+				7FFB4C3F26B04C2400135823 /* ListPostsTableViewCell.xib in Resources */,
 				7FFB4BD226B0251900135823 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,6 +480,7 @@
 				7FFB4C2D26B03EDC00135823 /* WebService.swift in Sources */,
 				7FFB4C2026B033BC00135823 /* HomeViewModel.swift in Sources */,
 				7FFB4C3326B0405F00135823 /* PostListModel.swift in Sources */,
+				7FFB4C3E26B04C2400135823 /* ListPostsTableViewCell.swift in Sources */,
 				7FFB4C3126B03F4900135823 /* GetListPosts.swift in Sources */,
 				7FFB4C2226B033EB00135823 /* DefaultHomeViewModel.swift in Sources */,
 				7FFB4C0326B02BC600135823 /* BaseViewController.swift in Sources */,

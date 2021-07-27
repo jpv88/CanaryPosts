@@ -19,10 +19,11 @@ internal extension DefaultHomeViewController {
         let component = UITableView()
         component.backgroundColor = .clear
         component.bounces = false
-        component.separatorStyle = .none
+        component.separatorStyle = .singleLine
+        component.separatorColor = Colors.tertiary
         component.delegate = tableManager
         component.dataSource = tableManager
-//        component.register(UINib(nibName: ListPostsTableViewCell.getIdentifier(), bundle: nil), forCellReuseIdentifier: ListMoviesTableViewCell.getIdentifier())
+        component.register(UINib(nibName: ListPostsTableViewCell.getIdentifier(), bundle: nil), forCellReuseIdentifier: ListPostsTableViewCell.getIdentifier())
         tableView = component
     }
     

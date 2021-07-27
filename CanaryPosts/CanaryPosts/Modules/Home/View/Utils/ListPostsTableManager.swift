@@ -14,16 +14,16 @@ protocol ListPostsActions {
 
 class ListPostsTableManager: NSObject, UITableViewDelegate, UITableViewDataSource {
     
-    private var dataSource: String?
+    private var dataSource: PostListModel?
     var delegate: ListPostsActions?
     
-    func set(input: String) {
+    func set(input: PostListModel) {
         dataSource = input
         delegate?.updateUI()
     }
     
     internal func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        140
+        80
     }
     
     internal func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -31,19 +31,14 @@ class ListPostsTableManager: NSObject, UITableViewDelegate, UITableViewDataSourc
     }
     
     internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
-//        guard let cell = tableView.dequeueReusableCell(withIdentifier: ListMoviesTableViewCell.getIdentifier(), for: indexPath) as? ListMoviesTableViewCell else {
-//            return UITableViewCell()
-//        }
-//        guard let dataSource = dataSource else {
-//            return UITableViewCell()
-//        }
-//        guard let name = dataSource[indexPath.row].data?.name, let data = dataSource[indexPath.row].data?.contents?.data else {
-//            return UITableViewCell()
-//        }
-//        cell.delegate = self
-//        cell.fill(title: name, model: data)
-//        return cell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ListPostsTableViewCell.getIdentifier(), for: indexPath) as? ListPostsTableViewCell else {
+            return UITableViewCell()
+        }
+        guard let dataSource = dataSource, let title = dataSource[indexPath.row].title else {
+            return UITableViewCell()
+        }
+        cell.fill(title: title)
+        return cell
     }
     
 }
