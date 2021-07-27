@@ -9,6 +9,8 @@ import Foundation
 
 // MARK: - PostListModelElement
 struct PostListModelElement: Codable {
-    let userID, id: Int?
+    let userId, id: Int?
     let title, body: String?
 }
+
+typealias PostListModel = [PostListModelElement]
