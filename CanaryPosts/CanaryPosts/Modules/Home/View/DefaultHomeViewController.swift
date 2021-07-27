@@ -14,13 +14,12 @@ class DefaultHomeViewController: BaseViewController {
     var tableManager: ListPostsTableManager?
     
     internal enum Constant {
-        static let title = "Canary TV"
+        static let title = "Canary Posts"
         static let accessibilityIdentifier = "HomeView"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func buildComponents() {
@@ -33,4 +32,33 @@ class DefaultHomeViewController: BaseViewController {
         layoutView()
     }
 
+}
+
+// MARK: HomeViewController Protocol
+extension DefaultHomeViewController: HomeViewController {
+    
+    func showThisError(error: Error) {
+        showError(error: error)
+    }
+    
+    
+    func showLoadedInfo(input: String) {
+//        tableManager?.set(input: input)
+    }
+        
+}
+
+// MARK: ListPostsActions Protocol
+extension DefaultHomeViewController: ListMoviesActions {
+    
+    func somePostPressed(postID: String) {
+//        viewModel?.somePostPressed(movieID: movieID)
+    }
+    
+    func updateUI() {
+        DispatchQueue.main.async { [weak self] in
+            self?.tableView.reloadData()
+        }
+    }
+    
 }

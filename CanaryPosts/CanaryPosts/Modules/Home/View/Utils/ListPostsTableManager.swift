@@ -7,6 +7,11 @@
 
 import Foundation
 
+protocol ListMoviesActions {
+    func somePostPressed(postID: String)
+    func updateUI()
+}
+
 class ListPostsTableManager {
     
 }

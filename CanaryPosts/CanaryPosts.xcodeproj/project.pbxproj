@@ -27,6 +27,7 @@
 		7FFB4C1726B0302D00135823 /* DefaultHomeViewController+BuildComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C1626B0302D00135823 /* DefaultHomeViewController+BuildComponents.swift */; };
 		7FFB4C1926B0303400135823 /* DefaultHomeViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C1826B0303400135823 /* DefaultHomeViewController+Layout.swift */; };
 		7FFB4C1C26B0309F00135823 /* ListPostsTableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C1B26B0309F00135823 /* ListPostsTableManager.swift */; };
+		7FFB4C1E26B0316F00135823 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C1D26B0316F00135823 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		7FFB4C1626B0302D00135823 /* DefaultHomeViewController+BuildComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DefaultHomeViewController+BuildComponents.swift"; sourceTree = "<group>"; };
 		7FFB4C1826B0303400135823 /* DefaultHomeViewController+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DefaultHomeViewController+Layout.swift"; sourceTree = "<group>"; };
 		7FFB4C1B26B0309F00135823 /* ListPostsTableManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostsTableManager.swift; sourceTree = "<group>"; };
+		7FFB4C1D26B0316F00135823 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 				7FFB4BFC26B0288F00135823 /* DefaultHomeViewController.swift */,
 				7FFB4C1626B0302D00135823 /* DefaultHomeViewController+BuildComponents.swift */,
 				7FFB4C1826B0303400135823 /* DefaultHomeViewController+Layout.swift */,
+				7FFB4C1D26B0316F00135823 /* HomeViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				7FFB4C1526B02DC700135823 /* HomeInjection.swift in Sources */,
 				7FFB4C1126B02D5400135823 /* Injector.swift in Sources */,
 				7FFB4C0D26B02CAA00135823 /* UITableViewCell+Identifier.swift in Sources */,
+				7FFB4C1E26B0316F00135823 /* HomeViewController.swift in Sources */,
 				7FFB4C0B26B02C9E00135823 /* UIViewController+ActivityIndicator.swift in Sources */,
 				7FFB4BC826B0251800135823 /* SceneDelegate.swift in Sources */,
 				7FFB4BD026B0251800135823 /* CanaryPosts.xcdatamodeld in Sources */,
