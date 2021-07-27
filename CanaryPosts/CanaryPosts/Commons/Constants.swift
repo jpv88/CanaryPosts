@@ -9,6 +9,6 @@ import Foundation
 
 struct Constants {
     struct API {
-        static let host = ""
+        static let host = "http://jsonplaceholder.typicode.com"
     }
 }

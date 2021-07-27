@@ -33,6 +33,10 @@
 		7FFB4C2426B0374100135823 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C2326B0374100135823 /* HomeCoordinator.swift */; };
 		7FFB4C2626B0374900135823 /* DefaultHomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C2526B0374900135823 /* DefaultHomeCoordinator.swift */; };
 		7FFB4C2826B039F700135823 /* CoordinatorBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C2726B039F700135823 /* CoordinatorBase.swift */; };
+		7FFB4C2D26B03EDC00135823 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C2C26B03EDC00135823 /* WebService.swift */; };
+		7FFB4C2F26B03EFD00135823 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C2E26B03EFD00135823 /* Endpoint.swift */; };
+		7FFB4C3126B03F4900135823 /* GetListPosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C3026B03F4900135823 /* GetListPosts.swift */; };
+		7FFB4C3326B0405F00135823 /* PostListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C3226B0405F00135823 /* PostListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +86,10 @@
 		7FFB4C2326B0374100135823 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		7FFB4C2526B0374900135823 /* DefaultHomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeCoordinator.swift; sourceTree = "<group>"; };
 		7FFB4C2726B039F700135823 /* CoordinatorBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorBase.swift; sourceTree = "<group>"; };
+		7FFB4C2C26B03EDC00135823 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		7FFB4C2E26B03EFD00135823 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		7FFB4C3026B03F4900135823 /* GetListPosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetListPosts.swift; sourceTree = "<group>"; };
+		7FFB4C3226B0405F00135823 /* PostListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +144,7 @@
 				7FFB4BF926B0283500135823 /* Base */,
 				7FFB4C0426B02BE600135823 /* Commons */,
 				7FFB4BFB26B0287F00135823 /* Modules */,
+				7FFB4C2926B03E8700135823 /* NetworkLayer */,
 			);
 			path = CanaryPosts;
 			sourceTree = "<group>";
@@ -196,6 +205,7 @@
 		7FFB4BFE26B02A9C00135823 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7FFB4C3226B0405F00135823 /* PostListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -271,6 +281,32 @@
 				7FFB4C1B26B0309F00135823 /* ListPostsTableManager.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		7FFB4C2926B03E8700135823 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				7FFB4C2A26B03EB200135823 /* Configuration */,
+				7FFB4C2B26B03EB800135823 /* Endpoints */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		7FFB4C2A26B03EB200135823 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				7FFB4C2C26B03EDC00135823 /* WebService.swift */,
+				7FFB4C2E26B03EFD00135823 /* Endpoint.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		7FFB4C2B26B03EB800135823 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				7FFB4C3026B03F4900135823 /* GetListPosts.swift */,
+			);
+			path = Endpoints;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,7 +445,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FFB4C2D26B03EDC00135823 /* WebService.swift in Sources */,
 				7FFB4C2026B033BC00135823 /* HomeViewModel.swift in Sources */,
+				7FFB4C3326B0405F00135823 /* PostListModel.swift in Sources */,
+				7FFB4C3126B03F4900135823 /* GetListPosts.swift in Sources */,
 				7FFB4C2226B033EB00135823 /* DefaultHomeViewModel.swift in Sources */,
 				7FFB4C0326B02BC600135823 /* BaseViewController.swift in Sources */,
 				7FFB4C1926B0303400135823 /* DefaultHomeViewController+Layout.swift in Sources */,
@@ -425,6 +464,7 @@
 				7FFB4C0D26B02CAA00135823 /* UITableViewCell+Identifier.swift in Sources */,
 				7FFB4C1E26B0316F00135823 /* HomeViewController.swift in Sources */,
 				7FFB4C0B26B02C9E00135823 /* UIViewController+ActivityIndicator.swift in Sources */,
+				7FFB4C2F26B03EFD00135823 /* Endpoint.swift in Sources */,
 				7FFB4C2826B039F700135823 /* CoordinatorBase.swift in Sources */,
 				7FFB4BC826B0251800135823 /* SceneDelegate.swift in Sources */,
 				7FFB4BD026B0251800135823 /* CanaryPosts.xcdatamodeld in Sources */,
