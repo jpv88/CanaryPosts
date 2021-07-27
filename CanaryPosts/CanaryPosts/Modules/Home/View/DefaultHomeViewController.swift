@@ -41,8 +41,7 @@ extension DefaultHomeViewController: HomeViewController {
     func showThisError(error: Error) {
         showError(error: error)
     }
-    
-    
+        
     func showLoadedInfo(input: PostListModel) {
         tableManager?.set(input: input)
     }
