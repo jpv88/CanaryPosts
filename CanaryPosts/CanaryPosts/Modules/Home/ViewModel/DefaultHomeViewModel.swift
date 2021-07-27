@@ -33,8 +33,8 @@ class DefaultHomeViewModel: HomeViewModel {
 
     }
     
-    func somePostPressed(postID: String) {
-        
+    func somePostPressed(post: PostListModelElement) {
+        print("Pressed post: \(post)")
     }
     
 }

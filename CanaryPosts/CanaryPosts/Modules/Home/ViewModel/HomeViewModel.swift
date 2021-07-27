@@ -9,5 +9,5 @@ import Foundation
 
 protocol HomeViewModel {
     func onViewDidLoad()
-    func somePostPressed(postID: String)
+    func somePostPressed(post: PostListModelElement)
 }

@@ -8,7 +8,7 @@
 import UIKit
 
 protocol ListPostsActions {
-    func somePostPressed(postID: String)
+    func somePostPressed(post: PostListModelElement)
     func updateUI()
 }
 
@@ -41,4 +41,9 @@ class ListPostsTableManager: NSObject, UITableViewDelegate, UITableViewDataSourc
         return cell
     }
     
+    internal func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let dataSource = dataSource else { return }
+        let object = dataSource[indexPath.row]
+        delegate?.somePostPressed(post: object)
+    }
 }
