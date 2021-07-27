@@ -24,6 +24,9 @@
 		7FFB4C1126B02D5400135823 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C1026B02D5400135823 /* Injector.swift */; };
 		7FFB4C1326B02D6C00135823 /* RegisterUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C1226B02D6C00135823 /* RegisterUtils.swift */; };
 		7FFB4C1526B02DC700135823 /* HomeInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C1426B02DC700135823 /* HomeInjection.swift */; };
+		7FFB4C1726B0302D00135823 /* DefaultHomeViewController+BuildComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C1626B0302D00135823 /* DefaultHomeViewController+BuildComponents.swift */; };
+		7FFB4C1926B0303400135823 /* DefaultHomeViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C1826B0303400135823 /* DefaultHomeViewController+Layout.swift */; };
+		7FFB4C1C26B0309F00135823 /* ListPostsTableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C1B26B0309F00135823 /* ListPostsTableManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		7FFB4C1026B02D5400135823 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		7FFB4C1226B02D6C00135823 /* RegisterUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUtils.swift; sourceTree = "<group>"; };
 		7FFB4C1426B02DC700135823 /* HomeInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInjection.swift; sourceTree = "<group>"; };
+		7FFB4C1626B0302D00135823 /* DefaultHomeViewController+BuildComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DefaultHomeViewController+BuildComponents.swift"; sourceTree = "<group>"; };
+		7FFB4C1826B0303400135823 /* DefaultHomeViewController+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DefaultHomeViewController+Layout.swift"; sourceTree = "<group>"; };
+		7FFB4C1B26B0309F00135823 /* ListPostsTableManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostsTableManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,7 +190,10 @@
 		7FFB4BFF26B02AA400135823 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7FFB4C1A26B0309800135823 /* Utils */,
 				7FFB4BFC26B0288F00135823 /* DefaultHomeViewController.swift */,
+				7FFB4C1626B0302D00135823 /* DefaultHomeViewController+BuildComponents.swift */,
+				7FFB4C1826B0303400135823 /* DefaultHomeViewController+Layout.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -236,6 +245,14 @@
 			children = (
 			);
 			path = Interactors;
+			sourceTree = "<group>";
+		};
+		7FFB4C1A26B0309800135823 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7FFB4C1B26B0309F00135823 /* ListPostsTableManager.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,10 +392,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FFB4C0326B02BC600135823 /* BaseViewController.swift in Sources */,
+				7FFB4C1926B0303400135823 /* DefaultHomeViewController+Layout.swift in Sources */,
 				7FFB4C0626B02BFB00135823 /* Colors.swift in Sources */,
 				7FFB4BFD26B0288F00135823 /* DefaultHomeViewController.swift in Sources */,
 				7FFB4C1326B02D6C00135823 /* RegisterUtils.swift in Sources */,
 				7FFB4BC626B0251800135823 /* AppDelegate.swift in Sources */,
+				7FFB4C1726B0302D00135823 /* DefaultHomeViewController+BuildComponents.swift in Sources */,
 				7FFB4C0826B02C0600135823 /* Constants.swift in Sources */,
 				7FFB4C1526B02DC700135823 /* HomeInjection.swift in Sources */,
 				7FFB4C1126B02D5400135823 /* Injector.swift in Sources */,
@@ -386,6 +405,7 @@
 				7FFB4C0B26B02C9E00135823 /* UIViewController+ActivityIndicator.swift in Sources */,
 				7FFB4BC826B0251800135823 /* SceneDelegate.swift in Sources */,
 				7FFB4BD026B0251800135823 /* CanaryPosts.xcdatamodeld in Sources */,
+				7FFB4C1C26B0309F00135823 /* ListPostsTableManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
