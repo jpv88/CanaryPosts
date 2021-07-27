@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - PostListModelElement
-struct PostListModelElement: Codable {
+@objc class PostListModelElement: NSObject, Codable {
     let userId, id: Int?
     let title, body: String?
 }

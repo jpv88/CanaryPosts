@@ -28,9 +28,13 @@ internal extension Injector {
             guard let coordinator = r.resolve(HomeCoordinator.self, argument: baseVC) else {
                 fatalError("Invalid args!")
             }
+            guard let listPostsInteractor = r.resolve(ListPostsInteractor.self) else {
+                fatalError("Invalid args!")
+            }
             let viewModel = DefaultHomeViewModel(
                 view: homeView,
-                coordinator: coordinator
+                coordinator: coordinator,
+                listPostsInteractor: listPostsInteractor
             )
             return viewModel
         }

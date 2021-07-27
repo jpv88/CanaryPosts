@@ -8,6 +8,6 @@
 import UIKit
 
 @objc protocol HomeViewController where Self: UIViewController {
-    func showLoadedInfo(input: String)
+    func showLoadedInfo(input: PostListModel)
     func showThisError(error: Error)
 }

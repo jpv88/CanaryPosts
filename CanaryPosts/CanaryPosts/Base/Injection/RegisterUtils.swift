@@ -13,7 +13,9 @@ internal extension Injector {
     }
     
     private func registerWebService() {
-        
+        injector.register(WebService.self) { _ in
+            WebService()
+        }
     }
     
     private func registerListPostTableManager() {
