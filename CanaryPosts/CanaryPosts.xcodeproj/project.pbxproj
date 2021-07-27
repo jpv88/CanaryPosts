@@ -16,6 +16,7 @@
 		7FFB4BD526B0251900135823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FFB4BD326B0251900135823 /* LaunchScreen.storyboard */; };
 		7FFB4BE026B0251900135823 /* CanaryPostsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4BDF26B0251900135823 /* CanaryPostsTests.swift */; };
 		7FFB4BEA26B0251900135823 /* CanaryPostsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4BE926B0251900135823 /* CanaryPostsUITests.swift */; };
+		7FFB4BF826B0264500135823 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 7FFB4BF726B0264500135823 /* Swinject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FFB4BF826B0264500135823 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = CanaryPosts;
+			packageProductDependencies = (
+				7FFB4BF726B0264500135823 /* Swinject */,
+			);
 			productName = CanaryPosts;
 			productReference = 7FFB4BC226B0251800135823 /* CanaryPosts.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 7FFB4BB926B0251800135823;
+			packageReferences = (
+				7FFB4BF626B0264500135823 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = 7FFB4BC326B0251800135823 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -618,6 +626,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7FFB4BF626B0264500135823 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7FFB4BF726B0264500135823 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7FFB4BF626B0264500135823 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		7FFB4BCE26B0251800135823 /* CanaryPosts.xcdatamodeld */ = {
