@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DefaultHomeViewController: UIViewController {
+class DefaultHomeViewController: BaseViewController {
     
 
 }

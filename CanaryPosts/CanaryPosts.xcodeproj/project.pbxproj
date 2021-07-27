@@ -16,6 +16,14 @@
 		7FFB4BEA26B0251900135823 /* CanaryPostsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4BE926B0251900135823 /* CanaryPostsUITests.swift */; };
 		7FFB4BF826B0264500135823 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 7FFB4BF726B0264500135823 /* Swinject */; };
 		7FFB4BFD26B0288F00135823 /* DefaultHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4BFC26B0288F00135823 /* DefaultHomeViewController.swift */; };
+		7FFB4C0326B02BC600135823 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C0226B02BC600135823 /* BaseViewController.swift */; };
+		7FFB4C0626B02BFB00135823 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C0526B02BFB00135823 /* Colors.swift */; };
+		7FFB4C0826B02C0600135823 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C0726B02C0600135823 /* Constants.swift */; };
+		7FFB4C0B26B02C9E00135823 /* UIViewController+ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C0A26B02C9E00135823 /* UIViewController+ActivityIndicator.swift */; };
+		7FFB4C0D26B02CAA00135823 /* UITableViewCell+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C0C26B02CAA00135823 /* UITableViewCell+Identifier.swift */; };
+		7FFB4C1126B02D5400135823 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C1026B02D5400135823 /* Injector.swift */; };
+		7FFB4C1326B02D6C00135823 /* RegisterUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C1226B02D6C00135823 /* RegisterUtils.swift */; };
+		7FFB4C1526B02DC700135823 /* HomeInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C1426B02DC700135823 /* HomeInjection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +56,14 @@
 		7FFB4BE526B0251900135823 /* CanaryPostsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanaryPostsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FFB4BE926B0251900135823 /* CanaryPostsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanaryPostsUITests.swift; sourceTree = "<group>"; };
 		7FFB4BFC26B0288F00135823 /* DefaultHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeViewController.swift; sourceTree = "<group>"; };
+		7FFB4C0226B02BC600135823 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7FFB4C0526B02BFB00135823 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		7FFB4C0726B02C0600135823 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7FFB4C0A26B02C9E00135823 /* UIViewController+ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ActivityIndicator.swift"; sourceTree = "<group>"; };
+		7FFB4C0C26B02CAA00135823 /* UITableViewCell+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Identifier.swift"; sourceTree = "<group>"; };
+		7FFB4C1026B02D5400135823 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		7FFB4C1226B02D6C00135823 /* RegisterUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUtils.swift; sourceTree = "<group>"; };
+		7FFB4C1426B02DC700135823 /* HomeInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInjection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				7FFB4BF926B0283500135823 /* Base */,
+				7FFB4C0426B02BE600135823 /* Commons */,
 				7FFB4BFB26B0287F00135823 /* Modules */,
 			);
 			path = CanaryPosts;
@@ -124,12 +141,15 @@
 		7FFB4BF926B0283500135823 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				7FFB4C0E26B02D3500135823 /* Injection */,
+				7FFB4C0F26B02D3C00135823 /* Interactors */,
+				7FFB4BD626B0251900135823 /* Info.plist */,
 				7FFB4BC526B0251800135823 /* AppDelegate.swift */,
+				7FFB4C0226B02BC600135823 /* BaseViewController.swift */,
 				7FFB4BC726B0251800135823 /* SceneDelegate.swift */,
 				7FFB4BD126B0251900135823 /* Assets.xcassets */,
-				7FFB4BD326B0251900135823 /* LaunchScreen.storyboard */,
-				7FFB4BD626B0251900135823 /* Info.plist */,
 				7FFB4BCE26B0251800135823 /* CanaryPosts.xcdatamodeld */,
+				7FFB4BD326B0251900135823 /* LaunchScreen.storyboard */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -137,7 +157,11 @@
 		7FFB4BFA26B0287900135823 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				7FFB4BFC26B0288F00135823 /* DefaultHomeViewController.swift */,
+				7FFB4C1426B02DC700135823 /* HomeInjection.swift */,
+				7FFB4C0126B02AB200135823 /* Coordinator */,
+				7FFB4BFE26B02A9C00135823 /* Model */,
+				7FFB4BFF26B02AA400135823 /* View */,
+				7FFB4C0026B02AA900135823 /* ViewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -148,6 +172,70 @@
 				7FFB4BFA26B0287900135823 /* Home */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		7FFB4BFE26B02A9C00135823 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7FFB4BFF26B02AA400135823 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7FFB4BFC26B0288F00135823 /* DefaultHomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7FFB4C0026B02AA900135823 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7FFB4C0126B02AB200135823 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		7FFB4C0426B02BE600135823 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				7FFB4C0926B02C9000135823 /* Utils */,
+				7FFB4C0526B02BFB00135823 /* Colors.swift */,
+				7FFB4C0726B02C0600135823 /* Constants.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		7FFB4C0926B02C9000135823 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7FFB4C0A26B02C9E00135823 /* UIViewController+ActivityIndicator.swift */,
+				7FFB4C0C26B02CAA00135823 /* UITableViewCell+Identifier.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7FFB4C0E26B02D3500135823 /* Injection */ = {
+			isa = PBXGroup;
+			children = (
+				7FFB4C1026B02D5400135823 /* Injector.swift */,
+				7FFB4C1226B02D6C00135823 /* RegisterUtils.swift */,
+			);
+			path = Injection;
+			sourceTree = "<group>";
+		};
+		7FFB4C0F26B02D3C00135823 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,8 +374,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FFB4C0326B02BC600135823 /* BaseViewController.swift in Sources */,
+				7FFB4C0626B02BFB00135823 /* Colors.swift in Sources */,
 				7FFB4BFD26B0288F00135823 /* DefaultHomeViewController.swift in Sources */,
+				7FFB4C1326B02D6C00135823 /* RegisterUtils.swift in Sources */,
 				7FFB4BC626B0251800135823 /* AppDelegate.swift in Sources */,
+				7FFB4C0826B02C0600135823 /* Constants.swift in Sources */,
+				7FFB4C1526B02DC700135823 /* HomeInjection.swift in Sources */,
+				7FFB4C1126B02D5400135823 /* Injector.swift in Sources */,
+				7FFB4C0D26B02CAA00135823 /* UITableViewCell+Identifier.swift in Sources */,
+				7FFB4C0B26B02C9E00135823 /* UIViewController+ActivityIndicator.swift in Sources */,
 				7FFB4BC826B0251800135823 /* SceneDelegate.swift in Sources */,
 				7FFB4BD026B0251800135823 /* CanaryPosts.xcdatamodeld in Sources */,
 			);
