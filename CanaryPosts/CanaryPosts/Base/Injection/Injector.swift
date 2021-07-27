@@ -5,6 +5,7 @@
 //  Created by Jared Perez Vega on 27/7/21.
 //
 
+import Foundation
 import Swinject
 
 typealias ResolverInjection = Resolver
@@ -33,4 +34,3 @@ class Injector {
         registerHomeModule()        
     }
 }
-import Foundation

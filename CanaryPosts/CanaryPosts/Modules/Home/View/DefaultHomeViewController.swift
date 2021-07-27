@@ -10,7 +10,7 @@ import UIKit
 class DefaultHomeViewController: BaseViewController {
     
     internal var tableView: UITableView!
-//    var viewModel: HomeViewModel?
+    var viewModel: HomeViewModel?
     var tableManager: ListPostsTableManager?
     
     internal enum Constant {
@@ -20,6 +20,7 @@ class DefaultHomeViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel?.onViewDidLoad()
     }
     
     override func buildComponents() {

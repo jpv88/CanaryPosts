@@ -17,7 +17,9 @@ internal extension Injector {
     }
     
     private func registerListPostTableManager() {
-        
+        injector.register(ListPostsTableManager.self) { _ in
+            ListPostsTableManager()
+        }
     }
      
     
