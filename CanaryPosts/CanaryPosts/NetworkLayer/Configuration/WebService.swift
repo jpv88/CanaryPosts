@@ -10,6 +10,7 @@ import Foundation
 enum MyCustomError: Error {
     case NoParsedModel(String)
     case ApiError(String)
+    case DataBaseError(String)
 }
 
 class WebService: NSObject, URLSessionTaskDelegate {
