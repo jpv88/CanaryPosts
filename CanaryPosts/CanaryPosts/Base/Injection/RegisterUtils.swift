@@ -26,7 +26,7 @@ internal extension Injector {
     }
     
     private func registerPersistentDataManager() {
-        injector.register(PersistentDataManager.self) { _ in
+        injector.register(PersistentDataManager.self, name: Constants.CoreData.postDataBase) { _ in
             DefaultPersistentDataManager(dataBaseName: Constants.CoreData.postDataBase)
         }
     }
