@@ -14,6 +14,7 @@ class BasePersistentDataManager {
     
     init(dataBaseName: String) {
         container = NSPersistentContainer(name: dataBaseName)
+        container.viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
         setupDatabase()
     }
     
