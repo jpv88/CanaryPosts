@@ -10,6 +10,7 @@ internal extension Injector {
     func registerUtils() {
         registerWebService()
         registerListPostTableManager()
+        registerPersistentDataManager()
     }
     
     private func registerWebService() {
@@ -21,6 +22,12 @@ internal extension Injector {
     private func registerListPostTableManager() {
         injector.register(ListPostsTableManager.self) { _ in
             ListPostsTableManager()
+        }
+    }
+    
+    private func registerPersistentDataManager() {
+        injector.register(PersistentDataManager.self) { _ in
+            DefaultPersistentDataManager(dataBaseName: Constants.CoreData.postDataBase)
         }
     }
      

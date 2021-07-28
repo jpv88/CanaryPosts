@@ -42,7 +42,10 @@
 		7FFB4C3A26B0473E00135823 /* ListPostsInteractorInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C3926B0473E00135823 /* ListPostsInteractorInjector.swift */; };
 		7FFB4C3E26B04C2400135823 /* ListPostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C3C26B04C2400135823 /* ListPostsTableViewCell.swift */; };
 		7FFB4C3F26B04C2400135823 /* ListPostsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FFB4C3D26B04C2400135823 /* ListPostsTableViewCell.xib */; };
-		7FFB4C4326B16E4800135823 /* PersistentDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C4226B16E4800135823 /* PersistentDataManager.swift */; };
+		7FFB4C4326B16E4800135823 /* BasePersistentDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C4226B16E4800135823 /* BasePersistentDataManager.swift */; };
+		7FFB4C4526B1709600135823 /* PersistentDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C4426B1709600135823 /* PersistentDataManager.swift */; };
+		7FFB4C4726B1709D00135823 /* DefaultPersistentDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C4626B1709D00135823 /* DefaultPersistentDataManager.swift */; };
+		7FFB4C4926B171BC00135823 /* PersistentDataManagerInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C4826B171BC00135823 /* PersistentDataManagerInjection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,7 +104,10 @@
 		7FFB4C3926B0473E00135823 /* ListPostsInteractorInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostsInteractorInjector.swift; sourceTree = "<group>"; };
 		7FFB4C3C26B04C2400135823 /* ListPostsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostsTableViewCell.swift; sourceTree = "<group>"; };
 		7FFB4C3D26B04C2400135823 /* ListPostsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPostsTableViewCell.xib; sourceTree = "<group>"; };
-		7FFB4C4226B16E4800135823 /* PersistentDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentDataManager.swift; sourceTree = "<group>"; };
+		7FFB4C4226B16E4800135823 /* BasePersistentDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePersistentDataManager.swift; sourceTree = "<group>"; };
+		7FFB4C4426B1709600135823 /* PersistentDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentDataManager.swift; sourceTree = "<group>"; };
+		7FFB4C4626B1709D00135823 /* DefaultPersistentDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPersistentDataManager.swift; sourceTree = "<group>"; };
+		7FFB4C4826B171BC00135823 /* PersistentDataManagerInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentDataManagerInjection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -354,7 +360,10 @@
 		7FFB4C4126B16DD400135823 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				7FFB4C4226B16E4800135823 /* PersistentDataManager.swift */,
+				7FFB4C4226B16E4800135823 /* BasePersistentDataManager.swift */,
+				7FFB4C4626B1709D00135823 /* DefaultPersistentDataManager.swift */,
+				7FFB4C4426B1709600135823 /* PersistentDataManager.swift */,
+				7FFB4C4826B171BC00135823 /* PersistentDataManagerInjection.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -496,7 +505,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FFB4C4326B16E4800135823 /* PersistentDataManager.swift in Sources */,
+				7FFB4C4326B16E4800135823 /* BasePersistentDataManager.swift in Sources */,
 				7FFB4C2D26B03EDC00135823 /* WebService.swift in Sources */,
 				7FFB4C2026B033BC00135823 /* HomeViewModel.swift in Sources */,
 				7FFB4C3326B0405F00135823 /* PostListModel.swift in Sources */,
@@ -504,6 +513,8 @@
 				7FFB4C3126B03F4900135823 /* GetListPosts.swift in Sources */,
 				7FFB4C2226B033EB00135823 /* DefaultHomeViewModel.swift in Sources */,
 				7FFB4C0326B02BC600135823 /* BaseViewController.swift in Sources */,
+				7FFB4C4726B1709D00135823 /* DefaultPersistentDataManager.swift in Sources */,
+				7FFB4C4526B1709600135823 /* PersistentDataManager.swift in Sources */,
 				7FFB4C1926B0303400135823 /* DefaultHomeViewController+Layout.swift in Sources */,
 				7FFB4C0626B02BFB00135823 /* Colors.swift in Sources */,
 				7FFB4C2626B0374900135823 /* DefaultHomeCoordinator.swift in Sources */,
@@ -522,6 +533,7 @@
 				7FFB4C3726B046E300135823 /* ListPostsInteractor.swift in Sources */,
 				7FFB4C2F26B03EFD00135823 /* Endpoint.swift in Sources */,
 				7FFB4C2826B039F700135823 /* CoordinatorBase.swift in Sources */,
+				7FFB4C4926B171BC00135823 /* PersistentDataManagerInjection.swift in Sources */,
 				7FFB4BC826B0251800135823 /* SceneDelegate.swift in Sources */,
 				7FFB4BD026B0251800135823 /* CanaryPosts.xcdatamodeld in Sources */,
 				7FFB4C1C26B0309F00135823 /* ListPostsTableManager.swift in Sources */,
