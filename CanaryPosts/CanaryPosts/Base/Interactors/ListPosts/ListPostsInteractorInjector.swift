@@ -14,7 +14,13 @@ internal extension Injector {
             guard let webService: WebService = r.resolve(WebService.self) else {
                 fatalError("Invalid args!")
             }
-            return ListPostsInteractor(webService: webService)
+            guard let localDataManager = r.resolve(PersistentDataManager.self, name: Constants.CoreData.postDataBase) else {
+                fatalError("Invalid args!")
+            }
+            return ListPostsInteractor(
+                webService: webService,
+                localDataManager: localDataManager
+            )
         }
     }
 }
