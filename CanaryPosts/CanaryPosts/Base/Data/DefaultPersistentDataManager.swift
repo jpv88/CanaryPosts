@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreData
 
 class DefaultPersistentDataManager: BasePersistentDataManager {}
 
@@ -24,6 +25,26 @@ extension DefaultPersistentDataManager: PersistentDataManager {
         } catch {
             fatalError("Error saving post - \(error)")
         }
+    }
+    
+    func getPosts() -> PostListModel {
+        let fetchRequest : NSFetchRequest<Post> = Post.fetchRequest()
+        do {
+            let result = try container.viewContext.fetch(fetchRequest)
+            return getPostListModelFrom(input: result)
+        } catch {
+            print("Getting Post error - \(error)")
+        }
+        return []
+    }
+    
+    private func getPostListModelFrom(input: [Post]) -> PostListModel {
+        var result: PostListModel = []
+        input.forEach { post in
+            let element = PostListModelElement(id: Int(post.id), userId: Int(post.userId), title: post.title ?? "", body: post.body ?? "")
+            result.append(element)
+        }
+        return result
     }
     
 }

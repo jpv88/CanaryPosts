@@ -9,4 +9,5 @@ import Foundation
 
 protocol PersistentDataManager {
     func savePost(id: Int, userId: Int, title: String, body: String)
+    func getPosts() -> PostListModel
 }

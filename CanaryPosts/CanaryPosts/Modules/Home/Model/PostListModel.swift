@@ -11,6 +11,13 @@ import Foundation
 @objc class PostListModelElement: NSObject, Codable {
     let userId, id: Int?
     let title, body: String?
+    init(id: Int, userId: Int, title: String, body: String) {
+        self.id = id
+        self.userId = userId
+        self.title = title
+        self.body = body
+        super.init()
+    }
 }
 
 typealias PostListModel = [PostListModelElement]
