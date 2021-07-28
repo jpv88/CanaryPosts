@@ -8,5 +8,5 @@
 import Foundation
 
 protocol PersistentDataManager {
-    func savePost(id: Int, userId: Int, title: Int, body: Int)
+    func savePost(id: Int, userId: Int, title: String, body: String)
 }

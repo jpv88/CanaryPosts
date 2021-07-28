@@ -10,7 +10,7 @@ import CoreData
 
 class BasePersistentDataManager {
     
-    private let container : NSPersistentContainer!
+    internal let container : NSPersistentContainer!
     
     init(dataBaseName: String) {
         container = NSPersistentContainer(name: dataBaseName)
