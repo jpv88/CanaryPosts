@@ -184,7 +184,7 @@
 		7FFB4BF926B0283500135823 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				7FFB4C4026B16DCD00135823 /* Architecture */,
+				7FFB4C4026B16DCD00135823 /* Core */,
 				7FFB4C4126B16DD400135823 /* Data */,
 				7FFB4C0E26B02D3500135823 /* Injection */,
 				7FFB4C0F26B02D3C00135823 /* Interactors */,
@@ -344,7 +344,7 @@
 			path = Collections;
 			sourceTree = "<group>";
 		};
-		7FFB4C4026B16DCD00135823 /* Architecture */ = {
+		7FFB4C4026B16DCD00135823 /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				7FFB4BC526B0251800135823 /* AppDelegate.swift */,
@@ -352,7 +352,7 @@
 				7FFB4C2726B039F700135823 /* CoordinatorBase.swift */,
 				7FFB4BC726B0251800135823 /* SceneDelegate.swift */,
 			);
-			path = Architecture;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		7FFB4C4126B16DD400135823 /* Data */ = {
