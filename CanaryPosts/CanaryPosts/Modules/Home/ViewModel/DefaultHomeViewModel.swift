@@ -27,8 +27,14 @@ class DefaultHomeViewModel: HomeViewModel {
         async {
             do {
                 await view?.showLoader()
-                let listPosts = try await listPostsInteractor.execute()
-                view?.showLoadedInfo(input: listPosts)
+                let shouldGetDataFromLocal = try await shouldGetDataFromLocalInteractor.execute()
+                if shouldGetDataFromLocal {
+                    let listPosts = try await getPostListFromLocalInteractor.execute()
+                    view?.showLoadedInfo(input: listPosts)
+                } else {
+                    let listPosts = try await listPostsInteractor.execute()
+                    view?.showLoadedInfo(input: listPosts)
+                }
                 await view?.hideLoader()
             } catch  {
                 view?.showThisError(error: error)
