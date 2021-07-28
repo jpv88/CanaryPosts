@@ -31,10 +31,18 @@ internal extension Injector {
             guard let listPostsInteractor = r.resolve(ListPostsInteractor.self) else {
                 fatalError("Invalid args!")
             }
+            guard let getPostListFromLocalInteractor = r.resolve(GetPostListFromLocalInteractor.self) else {
+                fatalError("Invalid args!")
+            }
+            guard let shouldGetDataFromLocalInteractor = r.resolve(ShouldGetDataFromLocalInteractor.self) else {
+                fatalError("Invalid args!")
+            }
             let viewModel = DefaultHomeViewModel(
                 view: homeView,
                 coordinator: coordinator,
-                listPostsInteractor: listPostsInteractor
+                listPostsInteractor: listPostsInteractor,
+                getPostListFromLocalInteractor: getPostListFromLocalInteractor,
+                shouldGetDataFromLocalInteractor: shouldGetDataFromLocalInteractor
             )
             return viewModel
         }

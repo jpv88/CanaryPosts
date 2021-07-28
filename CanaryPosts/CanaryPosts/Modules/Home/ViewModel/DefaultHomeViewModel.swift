@@ -12,11 +12,15 @@ class DefaultHomeViewModel: HomeViewModel {
     private weak var view: HomeViewController?
     private let coordinator: HomeCoordinator
     private let listPostsInteractor: ListPostsInteractor
+    private let getPostListFromLocalInteractor: GetPostListFromLocalInteractor
+    private let shouldGetDataFromLocalInteractor: ShouldGetDataFromLocalInteractor
     
-    init(view: HomeViewController, coordinator: HomeCoordinator, listPostsInteractor: ListPostsInteractor) {
+    init(view: HomeViewController, coordinator: HomeCoordinator, listPostsInteractor: ListPostsInteractor, getPostListFromLocalInteractor: GetPostListFromLocalInteractor, shouldGetDataFromLocalInteractor: ShouldGetDataFromLocalInteractor) {
         self.view = view
         self.coordinator = coordinator
         self.listPostsInteractor = listPostsInteractor
+        self.getPostListFromLocalInteractor = getPostListFromLocalInteractor
+        self.shouldGetDataFromLocalInteractor = shouldGetDataFromLocalInteractor
     }
     
     func onViewDidLoad() {
@@ -30,7 +34,7 @@ class DefaultHomeViewModel: HomeViewModel {
                 view?.showThisError(error: error)
             }
         }
-
+        
     }
     
     func somePostPressed(post: PostListModelElement) {
