@@ -33,6 +33,7 @@ class Injector {
     }
     
     private func registerModules() {
-        registerHomeModule()        
+        registerHomeModule()
+        registerDetailModule()
     }
 }

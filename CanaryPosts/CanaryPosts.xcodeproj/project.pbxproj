@@ -49,6 +49,16 @@
 		7FFB4C4E26B18C8B00135823 /* GetPostListFromLocalInteractorInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C4D26B18C8B00135823 /* GetPostListFromLocalInteractorInjector.swift */; };
 		7FFB4C5126B18DDB00135823 /* ShouldGetDataFromLocalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C5026B18DDB00135823 /* ShouldGetDataFromLocalInteractor.swift */; };
 		7FFB4C5326B18DE000135823 /* ShouldGetDataFromLocalInteractorInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C5226B18DE000135823 /* ShouldGetDataFromLocalInteractorInjector.swift */; };
+		7FFB4C5626B2B2E800135823 /* DetailInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C5526B2B2E800135823 /* DetailInjection.swift */; };
+		7FFB4C5C26B2B35F00135823 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C5B26B2B35F00135823 /* DetailViewController.swift */; };
+		7FFB4C5E26B2B36800135823 /* DefaultDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C5D26B2B36800135823 /* DefaultDetailViewController.swift */; };
+		7FFB4C6026B2B39C00135823 /* DefaultDetailViewController+BuildComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C5F26B2B39C00135823 /* DefaultDetailViewController+BuildComponents.swift */; };
+		7FFB4C6226B2B3A400135823 /* DefaultDetailViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C6126B2B3A400135823 /* DefaultDetailViewController+Layout.swift */; };
+		7FFB4C6526B2B46200135823 /* CommentsPostsTableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C6426B2B46200135823 /* CommentsPostsTableManager.swift */; };
+		7FFB4C6926B2B48900135823 /* CommentsPostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C6726B2B48900135823 /* CommentsPostsTableViewCell.swift */; };
+		7FFB4C6A26B2B48900135823 /* CommentsPostsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FFB4C6826B2B48900135823 /* CommentsPostsTableViewCell.xib */; };
+		7FFB4C6C26B2B63800135823 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C6B26B2B63800135823 /* DetailViewModel.swift */; };
+		7FFB4C6E26B2B63E00135823 /* DefaultDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C6D26B2B63E00135823 /* DefaultDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +124,16 @@
 		7FFB4C4D26B18C8B00135823 /* GetPostListFromLocalInteractorInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostListFromLocalInteractorInjector.swift; sourceTree = "<group>"; };
 		7FFB4C5026B18DDB00135823 /* ShouldGetDataFromLocalInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShouldGetDataFromLocalInteractor.swift; sourceTree = "<group>"; };
 		7FFB4C5226B18DE000135823 /* ShouldGetDataFromLocalInteractorInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShouldGetDataFromLocalInteractorInjector.swift; sourceTree = "<group>"; };
+		7FFB4C5526B2B2E800135823 /* DetailInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInjection.swift; sourceTree = "<group>"; };
+		7FFB4C5B26B2B35F00135823 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7FFB4C5D26B2B36800135823 /* DefaultDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDetailViewController.swift; sourceTree = "<group>"; };
+		7FFB4C5F26B2B39C00135823 /* DefaultDetailViewController+BuildComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DefaultDetailViewController+BuildComponents.swift"; sourceTree = "<group>"; };
+		7FFB4C6126B2B3A400135823 /* DefaultDetailViewController+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DefaultDetailViewController+Layout.swift"; sourceTree = "<group>"; };
+		7FFB4C6426B2B46200135823 /* CommentsPostsTableManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsPostsTableManager.swift; sourceTree = "<group>"; };
+		7FFB4C6726B2B48900135823 /* CommentsPostsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsPostsTableViewCell.swift; sourceTree = "<group>"; };
+		7FFB4C6826B2B48900135823 /* CommentsPostsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentsPostsTableViewCell.xib; sourceTree = "<group>"; };
+		7FFB4C6B26B2B63800135823 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		7FFB4C6D26B2B63E00135823 /* DefaultDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +239,7 @@
 		7FFB4BFB26B0287F00135823 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				7FFB4C5426B2B2B800135823 /* Detail */,
 				7FFB4BFA26B0287900135823 /* Home */,
 			);
 			path = Modules;
@@ -393,6 +414,63 @@
 			path = ShouldGetDataFromLocal;
 			sourceTree = "<group>";
 		};
+		7FFB4C5426B2B2B800135823 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				7FFB4C5526B2B2E800135823 /* DetailInjection.swift */,
+				7FFB4C5826B2B2F400135823 /* Model */,
+				7FFB4C5926B2B2F900135823 /* View */,
+				7FFB4C5A26B2B2FD00135823 /* ViewModel */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		7FFB4C5826B2B2F400135823 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7FFB4C5926B2B2F900135823 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7FFB4C6326B2B45500135823 /* Utils */,
+				7FFB4C5D26B2B36800135823 /* DefaultDetailViewController.swift */,
+				7FFB4C5F26B2B39C00135823 /* DefaultDetailViewController+BuildComponents.swift */,
+				7FFB4C6126B2B3A400135823 /* DefaultDetailViewController+Layout.swift */,
+				7FFB4C5B26B2B35F00135823 /* DetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7FFB4C5A26B2B2FD00135823 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7FFB4C6B26B2B63800135823 /* DetailViewModel.swift */,
+				7FFB4C6D26B2B63E00135823 /* DefaultDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7FFB4C6326B2B45500135823 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7FFB4C6626B2B46B00135823 /* Collections */,
+				7FFB4C6426B2B46200135823 /* CommentsPostsTableManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7FFB4C6626B2B46B00135823 /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				7FFB4C6726B2B48900135823 /* CommentsPostsTableViewCell.swift */,
+				7FFB4C6826B2B48900135823 /* CommentsPostsTableViewCell.xib */,
+			);
+			path = Collections;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -504,6 +582,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FFB4BD526B0251900135823 /* LaunchScreen.storyboard in Resources */,
+				7FFB4C6A26B2B48900135823 /* CommentsPostsTableViewCell.xib in Resources */,
 				7FFB4C3F26B04C2400135823 /* ListPostsTableViewCell.xib in Resources */,
 				7FFB4BD226B0251900135823 /* Assets.xcassets in Resources */,
 			);
@@ -531,6 +610,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FFB4C4326B16E4800135823 /* BasePersistentDataManager.swift in Sources */,
+				7FFB4C6226B2B3A400135823 /* DefaultDetailViewController+Layout.swift in Sources */,
+				7FFB4C6E26B2B63E00135823 /* DefaultDetailViewModel.swift in Sources */,
 				7FFB4C2D26B03EDC00135823 /* WebService.swift in Sources */,
 				7FFB4C5326B18DE000135823 /* ShouldGetDataFromLocalInteractorInjector.swift in Sources */,
 				7FFB4C2026B033BC00135823 /* HomeViewModel.swift in Sources */,
@@ -539,6 +620,7 @@
 				7FFB4C3126B03F4900135823 /* GetListPosts.swift in Sources */,
 				7FFB4C2226B033EB00135823 /* DefaultHomeViewModel.swift in Sources */,
 				7FFB4C0326B02BC600135823 /* BaseViewController.swift in Sources */,
+				7FFB4C6526B2B46200135823 /* CommentsPostsTableManager.swift in Sources */,
 				7FFB4C4726B1709D00135823 /* DefaultPersistentDataManager.swift in Sources */,
 				7FFB4C4526B1709600135823 /* PersistentDataManager.swift in Sources */,
 				7FFB4C1926B0303400135823 /* DefaultHomeViewController+Layout.swift in Sources */,
@@ -554,15 +636,21 @@
 				7FFB4C0826B02C0600135823 /* Constants.swift in Sources */,
 				7FFB4C1526B02DC700135823 /* HomeInjection.swift in Sources */,
 				7FFB4C1126B02D5400135823 /* Injector.swift in Sources */,
+				7FFB4C6926B2B48900135823 /* CommentsPostsTableViewCell.swift in Sources */,
 				7FFB4C0D26B02CAA00135823 /* UITableViewCell+Identifier.swift in Sources */,
 				7FFB4C1E26B0316F00135823 /* HomeViewController.swift in Sources */,
 				7FFB4C0B26B02C9E00135823 /* UIViewController+ActivityIndicator.swift in Sources */,
+				7FFB4C5626B2B2E800135823 /* DetailInjection.swift in Sources */,
+				7FFB4C6C26B2B63800135823 /* DetailViewModel.swift in Sources */,
 				7FFB4C3726B046E300135823 /* ListPostsInteractor.swift in Sources */,
+				7FFB4C5C26B2B35F00135823 /* DetailViewController.swift in Sources */,
 				7FFB4C4E26B18C8B00135823 /* GetPostListFromLocalInteractorInjector.swift in Sources */,
+				7FFB4C5E26B2B36800135823 /* DefaultDetailViewController.swift in Sources */,
 				7FFB4C2F26B03EFD00135823 /* Endpoint.swift in Sources */,
 				7FFB4C2826B039F700135823 /* CoordinatorBase.swift in Sources */,
 				7FFB4BC826B0251800135823 /* SceneDelegate.swift in Sources */,
 				7FFB4BD026B0251800135823 /* CanaryPosts.xcdatamodeld in Sources */,
+				7FFB4C6026B2B39C00135823 /* DefaultDetailViewController+BuildComponents.swift in Sources */,
 				7FFB4C1C26B0309F00135823 /* ListPostsTableManager.swift in Sources */,
 				7FFB4C5126B18DDB00135823 /* ShouldGetDataFromLocalInteractor.swift in Sources */,
 				7FFB4C2426B0374100135823 /* HomeCoordinator.swift in Sources */,

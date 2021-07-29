@@ -15,13 +15,13 @@ internal extension Injector {
         registerViewController()
     }
     
-    func registerCoordinator() {
+    private func registerCoordinator() {
         injector.register(HomeCoordinator.self) { (r: ResolverInjection, view: BaseViewController) in
             DefaultHomeCoordinator(resolver: r, viewController: view)
         }
     }
     
-    func registerViewModel() {
+    private func registerViewModel() {
         injector.register(HomeViewModel.self) { (r: ResolverInjection, view: DefaultHomeViewController) in
             let homeView = view as HomeViewController
             let baseVC = view as BaseViewController
@@ -48,7 +48,7 @@ internal extension Injector {
         }
     }
     
-    func registerViewController() {
+    private func registerViewController() {
         injector.register(HomeViewController.self) { r in
             let viewController = DefaultHomeViewController()
             let tableManager = r.resolve(ListPostsTableManager.self)
