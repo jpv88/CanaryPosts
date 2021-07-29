@@ -27,7 +27,7 @@ class GetCommentsByIDInteractor: InOutInteractor<GetCommentsByIDInteractor.Input
                 let commentsList = localDataManager.getComments()
                 return try await getCommentsWithPostId(commentsList: commentsList, postId: input)
             } else {
-                let commentsList = try await webService.load(type: CommentsModel.self, endpoint: .UsersInfo)
+                let commentsList = try await webService.load(type: CommentsModel.self, endpoint: .CommentsInfo)
                 try await saveDataInLocal(input: commentsList)
                 return try await getCommentsWithPostId(commentsList: commentsList, postId: input)
             }
