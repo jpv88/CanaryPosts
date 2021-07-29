@@ -18,8 +18,11 @@ class DefaultHomeCoordinator: HomeCoordinator {
         self.viewController = viewController
     }
     
-    func showDetailView() {
-        
+    func showDetailView(selectedPost: PostListModelElement) {
+        guard let detailViewController = resolver.resolve(DetailViewController.self, argument: selectedPost) as? DefaultDetailViewController else { return }
+        DispatchQueue.main.async { [weak self] in
+            self?.viewController.navigationController?.pushViewController(detailViewController, animated: true)
+        }
     }
         
 }

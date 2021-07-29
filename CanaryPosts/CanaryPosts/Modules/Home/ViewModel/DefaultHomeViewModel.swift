@@ -44,7 +44,7 @@ class DefaultHomeViewModel: HomeViewModel {
     }
     
     func somePostPressed(post: PostListModelElement) {
-        print("Pressed post: \(post)")
+        coordinator.showDetailView(selectedPost: post)
     }
     
 }

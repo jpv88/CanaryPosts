@@ -11,6 +11,7 @@ internal extension Injector {
         registerWebService()
         registerListPostTableManager()
         registerPersistentDataManager()
+        registerCommentsPostTableManager()
     }
     
     private func registerWebService() {
@@ -31,5 +32,10 @@ internal extension Injector {
         }
     }
      
+    private func registerCommentsPostTableManager() {
+        injector.register(CommentsPostsTableManager.self) { _ in
+            CommentsPostsTableManager()
+        }
+    }
     
 }

@@ -8,5 +8,5 @@
 import Foundation
 
 protocol HomeCoordinator: CoordinatorBase {
-    func showDetailView()
+    func showDetailView(selectedPost: PostListModelElement)
 }
