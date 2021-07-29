@@ -27,6 +27,8 @@ struct HTTPMethod: RawRepresentable, Equatable, Hashable {
 
 enum Endpoint {
     case ListPosts
+    case UsersInfo
+    case CommentsInfo
 }
 
 protocol Requestable {
@@ -40,6 +42,10 @@ extension Endpoint {
         switch self {
         case .ListPosts:
             return GetListPosts()
+        case .UsersInfo:
+            return GetUsersInfo()
+        case .CommentsInfo:
+            return GetCommentsInfo()
         }
     }
 }
