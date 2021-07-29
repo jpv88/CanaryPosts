@@ -12,6 +12,35 @@ class DefaultPersistentDataManager: BasePersistentDataManager {}
 
 extension DefaultPersistentDataManager: PersistentDataManager {
     
+    // MARK: Comment's
+    
+    func saveComment(postId: Int, id: Int, name: String, body: String, email: String) {
+        let context = container.viewContext
+        let commentReference = Comments(context: context)
+        commentReference.id = Int16(id)
+        commentReference.postId = Int16(postId)
+        commentReference.name = name
+        commentReference.email = email
+        commentReference.body = body
+        do {
+            try context.save()
+            print("Comment \(id) guardado")
+        } catch {
+            fatalError("Error saving comment - \(error)")
+        }
+    }
+    
+    func getComments() -> CommentsModel {
+        let fetchRequest : NSFetchRequest<Comments> = Comments.fetchRequest()
+        do {
+            let result = try container.viewContext.fetch(fetchRequest)            
+            return getCommentsModelFrom(input: result)
+        } catch {
+            print("Getting User error - \(error)")
+        }
+        return []
+    }
+    
     // MARK: User's
     
     func saveUser(id: Int, name: String, username: String, email: String) {
@@ -25,7 +54,7 @@ extension DefaultPersistentDataManager: PersistentDataManager {
             try context.save()
             print("User \(id) guardado")
         } catch {
-            fatalError("Error saving post - \(error)")
+            fatalError("Error saving user - \(error)")
         }
     }
     
@@ -35,7 +64,7 @@ extension DefaultPersistentDataManager: PersistentDataManager {
             let result = try container.viewContext.fetch(fetchRequest)
             return getUsersListModelFrom(input: result)
         } catch {
-            print("Getting Post error - \(error)")
+            print("Getting User error - \(error)")
         }
         return []
     }
@@ -83,6 +112,15 @@ extension DefaultPersistentDataManager: PersistentDataManager {
         var result: UsersModel = []
         input.forEach { user in
             let element = UsersModelElement(id: Int(user.id), name: user.name, username: user.username, email: user.email)
+            result.append(element)
+        }
+        return result
+    }
+    
+    private func getCommentsModelFrom(input: [Comments]) -> CommentsModel {
+        var result: CommentsModel = []
+        input.forEach { comment in
+            let element = CommentsModelElement(postId: Int(comment.postId), id: Int(comment.id), name: comment.name, email: comment.email, body: comment.body)
             result.append(element)
         }
         return result

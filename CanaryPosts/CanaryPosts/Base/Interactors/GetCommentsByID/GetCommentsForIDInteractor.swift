@@ -21,40 +21,41 @@ class GetCommentsForIDInteractor: InOutInteractor<GetCommentsForIDInteractor.Inp
         super.init()
     }
     
-//    override func execute(input: Input) async throws -> Output {
-//        do {
-//            if try await shouldGetDataFromLocal() {
-//                let usersList = localDataManager.getUsers()
-//                return try await getUserWithId(userList: usersList, id: input)
-//            } else {
-//                let usersList = try await webService.load(type: UsersModel.self, endpoint: .UsersInfo)
-//                try await saveDataInLocal(input: usersList)
-//                return try await getUserWithId(userList: usersList, id: input)
-//            }
-//        } catch {
-//            throw MyCustomError.ApiError("Api Error")
-//        }
-//    }
-//    
-//    private func getUserWithId(userList: UsersModel, id: Int) async throws -> Output {
-//        if let result = userList.first(where: {$0.id == id}) {
-//            return result
-//        } else {
-//            throw MyCustomError.InternalError("No founded elements!")
-//        }
-//    }
-//    
-//    private func saveDataInLocal(input: UsersModel) async throws {
-//        input.forEach { element in
-//            if let id = element.id, let exactlyID = Int(exactly: id), let name = element.name, let username = element.username, let email = element.email {
-//                localDataManager.saveUser(id: exactlyID, name: name, username: username, email: email)
-//            }
-//        }
-//    }
-//    
-//    private func shouldGetDataFromLocal() async throws -> Bool {
-//        let usersList = localDataManager.getUsers()
-//        return !usersList.isEmpty
-//    }
+    override func execute(input: Input) async throws -> Output {
+        do {
+            if try await shouldGetDataFromLocal() {
+                let commentsList = localDataManager.getComments()
+                return try await getCommentsWithPostId(commentsList: commentsList, postId: input)
+            } else {
+                let commentsList = try await webService.load(type: CommentsModel.self, endpoint: .UsersInfo)
+                try await saveDataInLocal(input: commentsList)
+                return try await getCommentsWithPostId(commentsList: commentsList, postId: input)
+            }
+        } catch {
+            throw MyCustomError.ApiError("Api Error")
+        }
+    }
+    
+    private func getCommentsWithPostId(commentsList: CommentsModel, postId: Int) async throws -> Output {
+        let foundedComments = commentsList.filter({ $0.postId == postId })
+        if !foundedComments.isEmpty {
+            return foundedComments
+        } else {
+            throw MyCustomError.InternalError("No founded elements!")
+        }
+    }
+    
+    private func saveDataInLocal(input: CommentsModel) async throws {
+        input.forEach { element in
+            if let id = element.id, let postId = element.postId, let name = element.name, let body = element.body, let email = element.email {
+                localDataManager.saveComment(postId: postId, id: id, name: name, body: body, email: email)
+            }
+        }
+    }
+    
+    private func shouldGetDataFromLocal() async throws -> Bool {
+        let commentsList = localDataManager.getComments()
+        return !commentsList.isEmpty
+    }
     
 }
