@@ -61,6 +61,8 @@
 		7FFB4C6E26B2B63E00135823 /* DefaultDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C6D26B2B63E00135823 /* DefaultDetailViewModel.swift */; };
 		7FFB4C7426B2C7F800135823 /* GetUsersInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C7326B2C7F800135823 /* GetUsersInfo.swift */; };
 		7FFB4C7626B2C85100135823 /* GetCommentsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C7526B2C85100135823 /* GetCommentsInfo.swift */; };
+		7FFB4C7826B2C92600135823 /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C7726B2C92600135823 /* UsersModel.swift */; };
+		7FFB4C7A26B2C97000135823 /* CommentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C7926B2C97000135823 /* CommentsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +140,8 @@
 		7FFB4C6D26B2B63E00135823 /* DefaultDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDetailViewModel.swift; sourceTree = "<group>"; };
 		7FFB4C7326B2C7F800135823 /* GetUsersInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsersInfo.swift; sourceTree = "<group>"; };
 		7FFB4C7526B2C85100135823 /* GetCommentsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentsInfo.swift; sourceTree = "<group>"; };
+		7FFB4C7726B2C92600135823 /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
+		7FFB4C7926B2C97000135823 /* CommentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -434,6 +438,8 @@
 		7FFB4C5826B2B2F400135823 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7FFB4C7726B2C92600135823 /* UsersModel.swift */,
+				7FFB4C7926B2C97000135823 /* CommentsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -629,6 +635,7 @@
 				7FFB4C6526B2B46200135823 /* CommentsPostsTableManager.swift in Sources */,
 				7FFB4C4726B1709D00135823 /* DefaultPersistentDataManager.swift in Sources */,
 				7FFB4C4526B1709600135823 /* PersistentDataManager.swift in Sources */,
+				7FFB4C7826B2C92600135823 /* UsersModel.swift in Sources */,
 				7FFB4C1926B0303400135823 /* DefaultHomeViewController+Layout.swift in Sources */,
 				7FFB4C0626B02BFB00135823 /* Colors.swift in Sources */,
 				7FFB4C2626B0374900135823 /* DefaultHomeCoordinator.swift in Sources */,
@@ -640,6 +647,7 @@
 				7FFB4C1326B02D6C00135823 /* RegisterUtils.swift in Sources */,
 				7FFB4BC626B0251800135823 /* AppDelegate.swift in Sources */,
 				7FFB4C1726B0302D00135823 /* DefaultHomeViewController+BuildComponents.swift in Sources */,
+				7FFB4C7A26B2C97000135823 /* CommentsModel.swift in Sources */,
 				7FFB4C0826B02C0600135823 /* Constants.swift in Sources */,
 				7FFB4C1526B02DC700135823 /* HomeInjection.swift in Sources */,
 				7FFB4C1126B02D5400135823 /* Injector.swift in Sources */,
