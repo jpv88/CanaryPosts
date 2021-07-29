@@ -18,7 +18,16 @@ class DefaultDetailViewModel: DetailViewModel {
     }
     
     func onViewDidLoad() {
-        
+       showPostInfo()
+    }
+    
+    private func showPostInfo() {
+        guard let title = post.title, let body = post.body else { return }
+        view?.showPostInfo(title: title, body: body)
+    }
+    
+    private func showOwnerInfo(name: String) {
+        view?.showOwnerInfo(name: name)
     }
     
 }

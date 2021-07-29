@@ -8,6 +8,8 @@
 import UIKit
 
 @objc protocol DetailViewController where Self: UIViewController {
-    func showLoadedInfo(input: String)
+    func showPostInfo(title: String, body: String)
+    func showOwnerInfo(name: String)
+    func showComments()
     func showThisError(error: Error)
 }

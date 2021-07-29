@@ -8,7 +8,11 @@
 import UIKit
 
 class DefaultDetailViewController: BaseViewController {
-    
+        
+    internal var postTitle: UILabel!
+    internal var postBody: UILabel!
+    internal var ownerPost: UILabel!
+    internal var commentsTitle: UILabel!
     internal var tableView: UITableView!
     var viewModel: DetailViewModel?
     var tableManager: CommentsPostsTableManager?
@@ -16,6 +20,9 @@ class DefaultDetailViewController: BaseViewController {
     internal enum Constant {
         static let title = "Canary Post Detail"
         static let accessibilityIdentifier = "DetailView"
+        static let commentsLabel = "Comments on Post:"
+        static let postOwnerTitle = "Post Owner:"
+        static let marginSeparator: CGFloat = 16
     }
     
     override func viewDidLoad() {
@@ -41,9 +48,18 @@ extension DefaultDetailViewController: DetailViewController {
     func showThisError(error: Error) {
         showError(error: error)
     }
-        
-    func showLoadedInfo(input: String) {
-        tableManager?.set(input: input)
+    
+    func showPostInfo(title: String, body: String) {
+        postTitle.text = title
+        postBody.text = body
+    }
+    
+    func showOwnerInfo(name: String) {
+        ownerPost.text = "\(Constant.postOwnerTitle) \(name)"
+    }
+    
+    func showComments() {
+        tableManager?.set(input: "")
     }
         
 }
