@@ -120,8 +120,10 @@ extension DefaultPersistentDataManager: PersistentDataManager {
     private func getCommentsModelFrom(input: [Comments]) -> CommentsModel {
         var result: CommentsModel = []
         input.forEach { comment in
-            let element = CommentsModelElement(postId: Int(comment.postId), id: Int(comment.id), name: comment.name, email: comment.email, body: comment.body)
-            result.append(element)
+            if let name = comment.name, let email = comment.email, let body = comment.body {
+                let element = CommentsModelElement(id: Int(comment.id), postId: Int(comment.postId), name: name, email: email, body: body)
+                result.append(element)
+            }
         }
         return result
     }

@@ -13,10 +13,10 @@ protocol CommentsPostsActions {
 
 class CommentsPostsTableManager: NSObject, UITableViewDelegate, UITableViewDataSource {
     
-    private var dataSource: String?
+    private var dataSource: CommentsModel?
     var delegate: CommentsPostsActions?
     
-    func set(input: String) {
+    func set(input: CommentsModel) {
         dataSource = input
         delegate?.updateUI()
     }

@@ -65,7 +65,7 @@
 		7FFB4C7A26B2C97000135823 /* CommentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C7926B2C97000135823 /* CommentsModel.swift */; };
 		7FFB4C7F26B2CC2900135823 /* GetUserByIdInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C7E26B2CC2900135823 /* GetUserByIdInteractor.swift */; };
 		7FFB4C8126B2CC3000135823 /* GetUserByIdInteractorInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C8026B2CC3000135823 /* GetUserByIdInteractorInjector.swift */; };
-		7FFB4C8626B2CCA200135823 /* GetCommentsForIDInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C8526B2CCA200135823 /* GetCommentsForIDInteractor.swift */; };
+		7FFB4C8626B2CCA200135823 /* GetCommentsByIDInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C8526B2CCA200135823 /* GetCommentsByIDInteractor.swift */; };
 		7FFB4C8826B2CCA800135823 /* GetCommentsForIDInteractorInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C8726B2CCA800135823 /* GetCommentsForIDInteractorInjector.swift */; };
 /* End PBXBuildFile section */
 
@@ -148,7 +148,7 @@
 		7FFB4C7926B2C97000135823 /* CommentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsModel.swift; sourceTree = "<group>"; };
 		7FFB4C7E26B2CC2900135823 /* GetUserByIdInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserByIdInteractor.swift; sourceTree = "<group>"; };
 		7FFB4C8026B2CC3000135823 /* GetUserByIdInteractorInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserByIdInteractorInjector.swift; sourceTree = "<group>"; };
-		7FFB4C8526B2CCA200135823 /* GetCommentsForIDInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentsForIDInteractor.swift; sourceTree = "<group>"; };
+		7FFB4C8526B2CCA200135823 /* GetCommentsByIDInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentsByIDInteractor.swift; sourceTree = "<group>"; };
 		7FFB4C8726B2CCA800135823 /* GetCommentsForIDInteractorInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentsForIDInteractorInjector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -505,7 +505,7 @@
 		7FFB4C8426B2CC9200135823 /* GetCommentsByID */ = {
 			isa = PBXGroup;
 			children = (
-				7FFB4C8526B2CCA200135823 /* GetCommentsForIDInteractor.swift */,
+				7FFB4C8526B2CCA200135823 /* GetCommentsByIDInteractor.swift */,
 				7FFB4C8726B2CCA800135823 /* GetCommentsForIDInteractorInjector.swift */,
 			);
 			path = GetCommentsByID;
@@ -656,7 +656,7 @@
 				7FFB4C5326B18DE000135823 /* ShouldGetDataFromLocalInteractorInjector.swift in Sources */,
 				7FFB4C2026B033BC00135823 /* HomeViewModel.swift in Sources */,
 				7FFB4C7F26B2CC2900135823 /* GetUserByIdInteractor.swift in Sources */,
-				7FFB4C8626B2CCA200135823 /* GetCommentsForIDInteractor.swift in Sources */,
+				7FFB4C8626B2CCA200135823 /* GetCommentsByIDInteractor.swift in Sources */,
 				7FFB4C3326B0405F00135823 /* PostListModel.swift in Sources */,
 				7FFB4C3E26B04C2400135823 /* ListPostsTableViewCell.swift in Sources */,
 				7FFB4C3126B03F4900135823 /* GetListPosts.swift in Sources */,

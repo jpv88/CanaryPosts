@@ -10,6 +10,6 @@ import UIKit
 @objc protocol DetailViewController where Self: UIViewController {
     func showPostInfo(title: String, body: String)
     func showOwnerInfo(name: String)
-    func showComments()
+    func showComments(input: CommentsModel)
     func showThisError(error: Error)
 }

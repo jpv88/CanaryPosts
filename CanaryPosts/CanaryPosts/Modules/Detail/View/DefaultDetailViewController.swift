@@ -62,8 +62,8 @@ extension DefaultDetailViewController: DetailViewController {
         }
     }
     
-    func showComments() {
-        tableManager?.set(input: "")
+    func showComments(input: CommentsModel) {
+        tableManager?.set(input: input)
     }
         
 }

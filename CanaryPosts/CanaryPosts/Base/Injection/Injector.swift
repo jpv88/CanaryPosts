@@ -31,7 +31,7 @@ class Injector {
         registerGetPostListFromLocalInteractorInjector()
         registerShouldGetDataFromLocalInteractorInjector()
         registerGetUsersInteractorInjector()
-        registerGetCommentsForIDInteractor()
+        registerGetCommentsByIDInteractor()
     }
     
     private func registerModules() {

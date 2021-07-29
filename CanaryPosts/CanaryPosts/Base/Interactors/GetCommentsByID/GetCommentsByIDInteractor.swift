@@ -7,7 +7,7 @@
 
 import Foundation
 
-class GetCommentsForIDInteractor: InOutInteractor<GetCommentsForIDInteractor.Input, GetCommentsForIDInteractor.Output> {
+class GetCommentsByIDInteractor: InOutInteractor<GetCommentsByIDInteractor.Input, GetCommentsByIDInteractor.Output> {
     
     typealias Input = Int
     typealias Output = CommentsModel

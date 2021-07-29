@@ -20,10 +20,14 @@ internal extension Injector {
             guard let usersInfoInteractor = r.resolve(GetUserByIdInteractor.self) else {
                 fatalError("Invalid args!")
             }
+            guard let commentsInteractor = r.resolve(GetCommentsByIDInteractor.self) else {
+                fatalError("Invalid args!")
+            }
             let viewModel = DefaultDetailViewModel(
                 view: detailView,
                 post: post,
-                usersInfoInteractor: usersInfoInteractor
+                usersInfoInteractor: usersInfoInteractor,
+                commentsInteractor: commentsInteractor
             )
             return viewModel
         }
