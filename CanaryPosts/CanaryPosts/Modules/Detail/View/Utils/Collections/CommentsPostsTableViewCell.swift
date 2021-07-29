@@ -8,16 +8,34 @@
 import UIKit
 
 class CommentsPostsTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var nameValueLabel: UILabel!
+    @IBOutlet var emailLabel: UILabel!
+    @IBOutlet var emailValueLabel: UILabel!
+    @IBOutlet var bodyLabel: UILabel!
+    @IBOutlet var bodyValueLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        setup()
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    private func setup() {
+        selectionStyle = .none
+        backgroundColor = .none
+        nameLabel.textColor = Colors.yellow
+        nameValueLabel.textColor = Colors.secondary
+        emailLabel.textColor = Colors.yellow
+        emailValueLabel.textColor = Colors.secondary
+        bodyLabel.textColor = Colors.yellow
+        bodyValueLabel.textColor = Colors.secondary
+    }
+    
+    func fill(name: String, email: String, body: String) {
+        nameValueLabel.text = name
+        emailValueLabel.text = email
+        bodyValueLabel.text = body
     }
     
 }

@@ -22,7 +22,7 @@ class CommentsPostsTableManager: NSObject, UITableViewDelegate, UITableViewDataS
     }
     
     internal func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        80
+        160
     }
     
     internal func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -33,10 +33,10 @@ class CommentsPostsTableManager: NSObject, UITableViewDelegate, UITableViewDataS
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CommentsPostsTableViewCell.getIdentifier(), for: indexPath) as? CommentsPostsTableViewCell else {
             return UITableViewCell()
         }
-//        guard let dataSource = dataSource, let title = dataSource[indexPath.row].title else {
-//            return UITableViewCell()
-//        }
-//        cell.fill(title: title)
+        guard let dataSource = dataSource, let name = dataSource[indexPath.row].name, let email = dataSource[indexPath.row].email, let body = dataSource[indexPath.row].body else {
+            return UITableViewCell()
+        }
+        cell.fill(name: name, email: email, body: body)
         return cell
     }
 
