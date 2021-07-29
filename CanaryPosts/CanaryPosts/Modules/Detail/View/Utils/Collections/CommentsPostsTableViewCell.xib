@@ -16,14 +16,17 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ue-ZD-AFW" userLabel="NameLabel">
-                        <rect key="frame" x="16" y="10" width="50" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ue-ZD-AFW" userLabel="NameLabel">
+                        <rect key="frame" x="16" y="10" width="248" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="0IS-Zg-1bc"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdD-cE-MBE" userLabel="NameValueLabel">
-                        <rect key="frame" x="76" y="10" width="228" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdD-cE-MBE" userLabel="NameValueLabel">
+                        <rect key="frame" x="304" y="10" width="0.0" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="viQ-1D-uOd"/>
                         </constraints>
@@ -69,7 +72,7 @@
                     <constraint firstItem="5ue-ZD-AFW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Nhp-dh-OaR"/>
                     <constraint firstItem="cpR-SZ-HEj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="NxV-3o-JLB"/>
                     <constraint firstItem="5ue-ZD-AFW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="PS7-g7-2Al"/>
-                    <constraint firstItem="sdD-cE-MBE" firstAttribute="leading" secondItem="5ue-ZD-AFW" secondAttribute="trailing" constant="10" id="Q75-IR-DQq"/>
+                    <constraint firstItem="sdD-cE-MBE" firstAttribute="leading" secondItem="5ue-ZD-AFW" secondAttribute="trailing" constant="40" id="Q75-IR-DQq"/>
                     <constraint firstAttribute="trailing" secondItem="cpR-SZ-HEj" secondAttribute="trailing" constant="16" id="Xqn-lN-f64"/>
                     <constraint firstItem="0cx-GW-AcO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="YZW-Xw-hg5"/>
                     <constraint firstItem="sdD-cE-MBE" firstAttribute="centerY" secondItem="5ue-ZD-AFW" secondAttribute="centerY" id="f4k-Ov-1f1"/>
@@ -85,8 +88,8 @@
                 <outlet property="bodyValueLabel" destination="cpR-SZ-HEj" id="rIh-qM-uUQ"/>
                 <outlet property="emailLabel" destination="0cx-GW-AcO" id="FDH-bd-MZy"/>
                 <outlet property="emailValueLabel" destination="feF-I9-o0w" id="r5h-Nf-kD0"/>
-                <outlet property="nameLabel" destination="5ue-ZD-AFW" id="KQb-i5-Nsl"/>
-                <outlet property="nameValueLabel" destination="5ue-ZD-AFW" id="0Yt-E4-SVB"/>
+                <outlet property="nameLabel" destination="5ue-ZD-AFW" id="eWH-dB-5JM"/>
+                <outlet property="nameValueLabel" destination="sdD-cE-MBE" id="1fW-SU-pdo"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
         </tableViewCell>
