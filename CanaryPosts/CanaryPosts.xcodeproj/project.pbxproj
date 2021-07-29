@@ -63,6 +63,10 @@
 		7FFB4C7626B2C85100135823 /* GetCommentsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C7526B2C85100135823 /* GetCommentsInfo.swift */; };
 		7FFB4C7826B2C92600135823 /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C7726B2C92600135823 /* UsersModel.swift */; };
 		7FFB4C7A26B2C97000135823 /* CommentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C7926B2C97000135823 /* CommentsModel.swift */; };
+		7FFB4C7F26B2CC2900135823 /* GetUserByIdInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C7E26B2CC2900135823 /* GetUserByIdInteractor.swift */; };
+		7FFB4C8126B2CC3000135823 /* GetUserByIdInteractorInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C8026B2CC3000135823 /* GetUserByIdInteractorInjector.swift */; };
+		7FFB4C8626B2CCA200135823 /* GetCommentsForIDInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C8526B2CCA200135823 /* GetCommentsForIDInteractor.swift */; };
+		7FFB4C8826B2CCA800135823 /* GetCommentsForIDInteractorInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C8726B2CCA800135823 /* GetCommentsForIDInteractorInjector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +146,10 @@
 		7FFB4C7526B2C85100135823 /* GetCommentsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentsInfo.swift; sourceTree = "<group>"; };
 		7FFB4C7726B2C92600135823 /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
 		7FFB4C7926B2C97000135823 /* CommentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsModel.swift; sourceTree = "<group>"; };
+		7FFB4C7E26B2CC2900135823 /* GetUserByIdInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserByIdInteractor.swift; sourceTree = "<group>"; };
+		7FFB4C8026B2CC3000135823 /* GetUserByIdInteractorInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserByIdInteractorInjector.swift; sourceTree = "<group>"; };
+		7FFB4C8526B2CCA200135823 /* GetCommentsForIDInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentsForIDInteractor.swift; sourceTree = "<group>"; };
+		7FFB4C8726B2CCA800135823 /* GetCommentsForIDInteractorInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentsForIDInteractorInjector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,7 +331,9 @@
 			isa = PBXGroup;
 			children = (
 				7FFB4C3426B046D600135823 /* Interactors.swift */,
+				7FFB4C8426B2CC9200135823 /* GetCommentsByID */,
 				7FFB4C4A26B18C6500135823 /* GetPostListFromLocal */,
+				7FFB4C7D26B2CC1000135823 /* GetUsersByID */,
 				7FFB4C3826B0471300135823 /* ListPosts */,
 				7FFB4C4F26B18DB600135823 /* ShouldGetDataFromLocal */,
 			);
@@ -483,6 +493,24 @@
 			path = Collections;
 			sourceTree = "<group>";
 		};
+		7FFB4C7D26B2CC1000135823 /* GetUsersByID */ = {
+			isa = PBXGroup;
+			children = (
+				7FFB4C7E26B2CC2900135823 /* GetUserByIdInteractor.swift */,
+				7FFB4C8026B2CC3000135823 /* GetUserByIdInteractorInjector.swift */,
+			);
+			path = GetUsersByID;
+			sourceTree = "<group>";
+		};
+		7FFB4C8426B2CC9200135823 /* GetCommentsByID */ = {
+			isa = PBXGroup;
+			children = (
+				7FFB4C8526B2CCA200135823 /* GetCommentsForIDInteractor.swift */,
+				7FFB4C8726B2CCA800135823 /* GetCommentsForIDInteractorInjector.swift */,
+			);
+			path = GetCommentsByID;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -627,10 +655,13 @@
 				7FFB4C2D26B03EDC00135823 /* WebService.swift in Sources */,
 				7FFB4C5326B18DE000135823 /* ShouldGetDataFromLocalInteractorInjector.swift in Sources */,
 				7FFB4C2026B033BC00135823 /* HomeViewModel.swift in Sources */,
+				7FFB4C7F26B2CC2900135823 /* GetUserByIdInteractor.swift in Sources */,
+				7FFB4C8626B2CCA200135823 /* GetCommentsForIDInteractor.swift in Sources */,
 				7FFB4C3326B0405F00135823 /* PostListModel.swift in Sources */,
 				7FFB4C3E26B04C2400135823 /* ListPostsTableViewCell.swift in Sources */,
 				7FFB4C3126B03F4900135823 /* GetListPosts.swift in Sources */,
 				7FFB4C2226B033EB00135823 /* DefaultHomeViewModel.swift in Sources */,
+				7FFB4C8826B2CCA800135823 /* GetCommentsForIDInteractorInjector.swift in Sources */,
 				7FFB4C0326B02BC600135823 /* BaseViewController.swift in Sources */,
 				7FFB4C6526B2B46200135823 /* CommentsPostsTableManager.swift in Sources */,
 				7FFB4C4726B1709D00135823 /* DefaultPersistentDataManager.swift in Sources */,
@@ -652,6 +683,7 @@
 				7FFB4C1526B02DC700135823 /* HomeInjection.swift in Sources */,
 				7FFB4C1126B02D5400135823 /* Injector.swift in Sources */,
 				7FFB4C6926B2B48900135823 /* CommentsPostsTableViewCell.swift in Sources */,
+				7FFB4C8126B2CC3000135823 /* GetUserByIdInteractorInjector.swift in Sources */,
 				7FFB4C0D26B02CAA00135823 /* UITableViewCell+Identifier.swift in Sources */,
 				7FFB4C1E26B0316F00135823 /* HomeViewController.swift in Sources */,
 				7FFB4C0B26B02C9E00135823 /* UIViewController+ActivityIndicator.swift in Sources */,

@@ -17,9 +17,13 @@ internal extension Injector {
     private func registerViewModel() {
         injector.register(DetailViewModel.self) { (r: ResolverInjection, view: DefaultDetailViewController, post: PostListModelElement) in
             let detailView = view as DetailViewController
+            guard let usersInfoInteractor = r.resolve(GetUserByIdInteractor.self) else {
+                fatalError("Invalid args!")
+            }
             let viewModel = DefaultDetailViewModel(
                 view: detailView,
-                post: post
+                post: post,
+                usersInfoInteractor: usersInfoInteractor
             )
             return viewModel
         }

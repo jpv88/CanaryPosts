@@ -50,12 +50,16 @@ extension DefaultDetailViewController: DetailViewController {
     }
     
     func showPostInfo(title: String, body: String) {
-        postTitle.text = title
-        postBody.text = body
+        DispatchQueue.main.async { [weak self] in
+            self?.postTitle.text = title
+            self?.postBody.text = body
+        }
     }
     
     func showOwnerInfo(name: String) {
-        ownerPost.text = "\(Constant.postOwnerTitle) \(name)"
+        DispatchQueue.main.async { [weak self] in
+            self?.ownerPost.text = "\(Constant.postOwnerTitle) \(name)"
+        }
     }
     
     func showComments() {

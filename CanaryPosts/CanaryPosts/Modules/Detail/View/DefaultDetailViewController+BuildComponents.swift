@@ -40,7 +40,7 @@ internal extension DefaultDetailViewController {
     private func buildOwnerPost() {
         let component = UILabel()
         component.backgroundColor = .clear
-        component.textColor = Colors.secondary
+        component.textColor = Colors.yellow
         component.font = UIFont.systemFont(ofSize: 12)
         ownerPost = component
     }
@@ -48,7 +48,7 @@ internal extension DefaultDetailViewController {
     private func buildCommentsTitle() {
         let component = UILabel()
         component.backgroundColor = .clear
-        component.textColor = Colors.secondary
+        component.textColor = Colors.yellow
         component.font = UIFont.systemFont(ofSize: 12)
         component.text = Constant.commentsLabel
         commentsTitle = component

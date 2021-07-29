@@ -11,6 +11,7 @@ enum MyCustomError: Error {
     case NoParsedModel(String)
     case ApiError(String)
     case DataBaseError(String)
+    case InternalError(String)
 }
 
 class WebService: NSObject, URLSessionTaskDelegate {

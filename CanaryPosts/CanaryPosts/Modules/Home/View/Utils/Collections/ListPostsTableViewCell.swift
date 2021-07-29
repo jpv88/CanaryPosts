@@ -20,7 +20,7 @@ class ListPostsTableViewCell: UITableViewCell {
     private func setup() {
         selectionStyle = .none
         backgroundColor = .none
-        titleLabel.textColor = Colors.secondary
+        titleLabel.textColor = Colors.yellow
         titleValueLabel.textColor = Colors.secondary
     }
     

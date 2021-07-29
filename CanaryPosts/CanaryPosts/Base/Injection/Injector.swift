@@ -30,6 +30,7 @@ class Injector {
         registerListPostsInteractorInjector()
         registerGetPostListFromLocalInteractorInjector()
         registerShouldGetDataFromLocalInteractorInjector()
+        registerGetUsersInteractorInjector()
     }
     
     private func registerModules() {

@@ -22,12 +22,21 @@ class ListPostsInteractor: OutputInteractor<ListPostsInteractor.Output> {
     
     override func execute() async throws -> Output {
         do {
-            let postsList = try await webService.load(type: PostListModel.self, endpoint: .ListPosts)
-            try await saveDataInLocal(input: postsList)
-            return postsList
+            if try await shouldGetDataFromLocal() {
+                return localDataManager.getPosts()
+            } else {
+                let postsList = try await webService.load(type: PostListModel.self, endpoint: .ListPosts)
+                try await saveDataInLocal(input: postsList)
+                return postsList
+            }
         } catch {
             throw MyCustomError.ApiError("Api Error")
         }
+    }
+    
+    private func shouldGetDataFromLocal() async throws -> Bool {
+        let postsList = localDataManager.getPosts()
+        return !postsList.isEmpty
     }
     
     private func saveDataInLocal(input: PostListModel) async throws {
