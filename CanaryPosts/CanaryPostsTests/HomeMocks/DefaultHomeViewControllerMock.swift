@@ -18,10 +18,6 @@ class DefaultHomeViewControllerMock: BaseViewController, HomeViewController {
     
     func showThisError(error: Error) {
         isHomeViewControllerTestCalled = true
-    }
-    
-        
-    
-
+    }    
     
 }

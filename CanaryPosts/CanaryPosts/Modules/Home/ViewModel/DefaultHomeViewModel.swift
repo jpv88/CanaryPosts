@@ -29,8 +29,7 @@ class DefaultHomeViewModel: HomeViewModel {
             } catch  {
                 view?.showThisError(error: error)
             }
-        }
-        
+        }        
     }
     
     func somePostPressed(post: PostListModelElement) {
