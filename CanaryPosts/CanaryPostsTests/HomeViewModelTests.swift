@@ -40,10 +40,10 @@ class HomeViewModelTests: XCTestCase {
         XCTAssertTrue(viewController.isHomeViewControllerTestCalled)
     }
     
-    func testHomeSomePostPressed(post: PostListModelElement) throws {
-//        viewModel.somePostPressed(post: PostListModel.getSingleElementStub())
-//        Thread.sleep(forTimeInterval: 1)
-//        XCTAssertTrue(coordinator.isHomeCoordinatorTestCalled)
+    func testHomeSomePostPressedCallsCoordinator() throws {
+        viewModel.somePostPressed(post: PostListModel.getSingleElementStub())
+        Thread.sleep(forTimeInterval: 1)
+        XCTAssertTrue(coordinator.isHomeCoordinatorTestCalled)
     }
     
     private func buildCoordinator(baseVC: BaseViewController) -> DefaultHomeCoordinatorMock {
