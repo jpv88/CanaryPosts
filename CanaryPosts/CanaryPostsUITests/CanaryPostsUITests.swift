@@ -12,16 +12,16 @@ class CanaryPostsUITests: XCTestCase {
     func testHomeScreen() throws {
         let app = XCUIApplication()
         app.launch()
-        Thread.sleep(forTimeInterval: 2)
+        Thread.sleep(forTimeInterval: 4)
         XCTAssertTrue(app.otherElements["HomeView"].exists)
     }
     
     func testDetailScreen() throws {
         let app = XCUIApplication()
         app.launch()
-        Thread.sleep(forTimeInterval: 2)
+        Thread.sleep(forTimeInterval: 4)
         app.tables.cells.element(boundBy: 0).tap()        
-        Thread.sleep(forTimeInterval: 2)
+        Thread.sleep(forTimeInterval: 4)
         XCTAssertTrue(app.otherElements["DetailView"].exists)
     }
 
