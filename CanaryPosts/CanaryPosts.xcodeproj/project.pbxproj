@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F93DCEB26B4037F007C04D4 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F93DCEA26B4037F007C04D4 /* HomeViewModelTests.swift */; };
+		7F93DCEE26B40A0E007C04D4 /* PostListModelStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F93DCED26B40A0E007C04D4 /* PostListModelStubs.swift */; };
+		7F93DCF126B40D0B007C04D4 /* DefaultHomeViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F93DCF026B40D0B007C04D4 /* DefaultHomeViewControllerMock.swift */; };
+		7F93DCF326B4105B007C04D4 /* DefaultHomeCoordinatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F93DCF226B4105B007C04D4 /* DefaultHomeCoordinatorMock.swift */; };
+		7F93DCF626B412C8007C04D4 /* ListPostsInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F93DCF526B412C8007C04D4 /* ListPostsInteractorMock.swift */; };
 		7FFB4BC626B0251800135823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4BC526B0251800135823 /* AppDelegate.swift */; };
 		7FFB4BC826B0251800135823 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4BC726B0251800135823 /* SceneDelegate.swift */; };
 		7FFB4BD026B0251800135823 /* CanaryPosts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4BCE26B0251800135823 /* CanaryPosts.xcdatamodeld */; };
 		7FFB4BD226B0251900135823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FFB4BD126B0251900135823 /* Assets.xcassets */; };
 		7FFB4BD526B0251900135823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FFB4BD326B0251900135823 /* LaunchScreen.storyboard */; };
-		7FFB4BE026B0251900135823 /* CanaryPostsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4BDF26B0251900135823 /* CanaryPostsTests.swift */; };
 		7FFB4BEA26B0251900135823 /* CanaryPostsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4BE926B0251900135823 /* CanaryPostsUITests.swift */; };
 		7FFB4BF826B0264500135823 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 7FFB4BF726B0264500135823 /* Swinject */; };
 		7FFB4BFD26B0288F00135823 /* DefaultHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4BFC26B0288F00135823 /* DefaultHomeViewController.swift */; };
@@ -83,6 +87,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F93DCEA26B4037F007C04D4 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		7F93DCED26B40A0E007C04D4 /* PostListModelStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListModelStubs.swift; sourceTree = "<group>"; };
+		7F93DCF026B40D0B007C04D4 /* DefaultHomeViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeViewControllerMock.swift; sourceTree = "<group>"; };
+		7F93DCF226B4105B007C04D4 /* DefaultHomeCoordinatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeCoordinatorMock.swift; sourceTree = "<group>"; };
+		7F93DCF526B412C8007C04D4 /* ListPostsInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostsInteractorMock.swift; sourceTree = "<group>"; };
 		7FFB4BC226B0251800135823 /* CanaryPosts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanaryPosts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FFB4BC526B0251800135823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FFB4BC726B0251800135823 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,7 +100,6 @@
 		7FFB4BD426B0251900135823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FFB4BD626B0251900135823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FFB4BDB26B0251900135823 /* CanaryPostsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanaryPostsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FFB4BDF26B0251900135823 /* CanaryPostsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanaryPostsTests.swift; sourceTree = "<group>"; };
 		7FFB4BE526B0251900135823 /* CanaryPostsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanaryPostsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FFB4BE926B0251900135823 /* CanaryPostsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanaryPostsUITests.swift; sourceTree = "<group>"; };
 		7FFB4BFC26B0288F00135823 /* DefaultHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +178,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F93DCEC26B409D3007C04D4 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				7F93DCED26B40A0E007C04D4 /* PostListModelStubs.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		7F93DCEF26B40CF7007C04D4 /* HomeMocks */ = {
+			isa = PBXGroup;
+			children = (
+				7F93DCF026B40D0B007C04D4 /* DefaultHomeViewControllerMock.swift */,
+				7F93DCF226B4105B007C04D4 /* DefaultHomeCoordinatorMock.swift */,
+			);
+			path = HomeMocks;
+			sourceTree = "<group>";
+		};
+		7F93DCF426B412BD007C04D4 /* CommonsMocks */ = {
+			isa = PBXGroup;
+			children = (
+				7F93DCF526B412C8007C04D4 /* ListPostsInteractorMock.swift */,
+			);
+			path = CommonsMocks;
+			sourceTree = "<group>";
+		};
 		7FFB4BB926B0251800135823 = {
 			isa = PBXGroup;
 			children = (
@@ -204,7 +237,10 @@
 		7FFB4BDE26B0251900135823 /* CanaryPostsTests */ = {
 			isa = PBXGroup;
 			children = (
-				7FFB4BDF26B0251900135823 /* CanaryPostsTests.swift */,
+				7F93DCF426B412BD007C04D4 /* CommonsMocks */,
+				7F93DCEF26B40CF7007C04D4 /* HomeMocks */,
+				7F93DCEC26B409D3007C04D4 /* Stubs */,
+				7F93DCEA26B4037F007C04D4 /* HomeViewModelTests.swift */,
 			);
 			path = CanaryPostsTests;
 			sourceTree = "<group>";
@@ -677,7 +713,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FFB4BE026B0251900135823 /* CanaryPostsTests.swift in Sources */,
+				7F93DCF126B40D0B007C04D4 /* DefaultHomeViewControllerMock.swift in Sources */,
+				7F93DCEB26B4037F007C04D4 /* HomeViewModelTests.swift in Sources */,
+				7F93DCF326B4105B007C04D4 /* DefaultHomeCoordinatorMock.swift in Sources */,
+				7F93DCEE26B40A0E007C04D4 /* PostListModelStubs.swift in Sources */,
+				7F93DCF626B412C8007C04D4 /* ListPostsInteractorMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
