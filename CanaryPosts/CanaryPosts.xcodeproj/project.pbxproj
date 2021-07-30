@@ -45,10 +45,6 @@
 		7FFB4C4326B16E4800135823 /* BasePersistentDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C4226B16E4800135823 /* BasePersistentDataManager.swift */; };
 		7FFB4C4526B1709600135823 /* PersistentDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C4426B1709600135823 /* PersistentDataManager.swift */; };
 		7FFB4C4726B1709D00135823 /* DefaultPersistentDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C4626B1709D00135823 /* DefaultPersistentDataManager.swift */; };
-		7FFB4C4C26B18C8600135823 /* GetPostListFromLocalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C4B26B18C8600135823 /* GetPostListFromLocalInteractor.swift */; };
-		7FFB4C4E26B18C8B00135823 /* GetPostListFromLocalInteractorInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C4D26B18C8B00135823 /* GetPostListFromLocalInteractorInjector.swift */; };
-		7FFB4C5126B18DDB00135823 /* ShouldGetDataFromLocalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C5026B18DDB00135823 /* ShouldGetDataFromLocalInteractor.swift */; };
-		7FFB4C5326B18DE000135823 /* ShouldGetDataFromLocalInteractorInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C5226B18DE000135823 /* ShouldGetDataFromLocalInteractorInjector.swift */; };
 		7FFB4C5626B2B2E800135823 /* DetailInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C5526B2B2E800135823 /* DetailInjection.swift */; };
 		7FFB4C5C26B2B35F00135823 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C5B26B2B35F00135823 /* DetailViewController.swift */; };
 		7FFB4C5E26B2B36800135823 /* DefaultDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4C5D26B2B36800135823 /* DefaultDetailViewController.swift */; };
@@ -128,10 +124,6 @@
 		7FFB4C4226B16E4800135823 /* BasePersistentDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePersistentDataManager.swift; sourceTree = "<group>"; };
 		7FFB4C4426B1709600135823 /* PersistentDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentDataManager.swift; sourceTree = "<group>"; };
 		7FFB4C4626B1709D00135823 /* DefaultPersistentDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPersistentDataManager.swift; sourceTree = "<group>"; };
-		7FFB4C4B26B18C8600135823 /* GetPostListFromLocalInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostListFromLocalInteractor.swift; sourceTree = "<group>"; };
-		7FFB4C4D26B18C8B00135823 /* GetPostListFromLocalInteractorInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostListFromLocalInteractorInjector.swift; sourceTree = "<group>"; };
-		7FFB4C5026B18DDB00135823 /* ShouldGetDataFromLocalInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShouldGetDataFromLocalInteractor.swift; sourceTree = "<group>"; };
-		7FFB4C5226B18DE000135823 /* ShouldGetDataFromLocalInteractorInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShouldGetDataFromLocalInteractorInjector.swift; sourceTree = "<group>"; };
 		7FFB4C5526B2B2E800135823 /* DetailInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInjection.swift; sourceTree = "<group>"; };
 		7FFB4C5B26B2B35F00135823 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7FFB4C5D26B2B36800135823 /* DefaultDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDetailViewController.swift; sourceTree = "<group>"; };
@@ -332,10 +324,8 @@
 			children = (
 				7FFB4C3426B046D600135823 /* Interactors.swift */,
 				7FFB4C8426B2CC9200135823 /* GetCommentsByID */,
-				7FFB4C4A26B18C6500135823 /* GetPostListFromLocal */,
 				7FFB4C7D26B2CC1000135823 /* GetUsersByID */,
 				7FFB4C3826B0471300135823 /* ListPosts */,
-				7FFB4C4F26B18DB600135823 /* ShouldGetDataFromLocal */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -414,24 +404,6 @@
 				7FFB4C4426B1709600135823 /* PersistentDataManager.swift */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		7FFB4C4A26B18C6500135823 /* GetPostListFromLocal */ = {
-			isa = PBXGroup;
-			children = (
-				7FFB4C4B26B18C8600135823 /* GetPostListFromLocalInteractor.swift */,
-				7FFB4C4D26B18C8B00135823 /* GetPostListFromLocalInteractorInjector.swift */,
-			);
-			path = GetPostListFromLocal;
-			sourceTree = "<group>";
-		};
-		7FFB4C4F26B18DB600135823 /* ShouldGetDataFromLocal */ = {
-			isa = PBXGroup;
-			children = (
-				7FFB4C5026B18DDB00135823 /* ShouldGetDataFromLocalInteractor.swift */,
-				7FFB4C5226B18DE000135823 /* ShouldGetDataFromLocalInteractorInjector.swift */,
-			);
-			path = ShouldGetDataFromLocal;
 			sourceTree = "<group>";
 		};
 		7FFB4C5426B2B2B800135823 /* Detail */ = {
@@ -653,7 +625,6 @@
 				7FFB4C6226B2B3A400135823 /* DefaultDetailViewController+Layout.swift in Sources */,
 				7FFB4C6E26B2B63E00135823 /* DefaultDetailViewModel.swift in Sources */,
 				7FFB4C2D26B03EDC00135823 /* WebService.swift in Sources */,
-				7FFB4C5326B18DE000135823 /* ShouldGetDataFromLocalInteractorInjector.swift in Sources */,
 				7FFB4C2026B033BC00135823 /* HomeViewModel.swift in Sources */,
 				7FFB4C7F26B2CC2900135823 /* GetUserByIdInteractor.swift in Sources */,
 				7FFB4C8626B2CCA200135823 /* GetCommentsByIDInteractor.swift in Sources */,
@@ -671,7 +642,6 @@
 				7FFB4C0626B02BFB00135823 /* Colors.swift in Sources */,
 				7FFB4C2626B0374900135823 /* DefaultHomeCoordinator.swift in Sources */,
 				7FFB4BFD26B0288F00135823 /* DefaultHomeViewController.swift in Sources */,
-				7FFB4C4C26B18C8600135823 /* GetPostListFromLocalInteractor.swift in Sources */,
 				7FFB4C3A26B0473E00135823 /* ListPostsInteractorInjector.swift in Sources */,
 				7FFB4C3526B046D600135823 /* Interactors.swift in Sources */,
 				7FFB4C7426B2C7F800135823 /* GetUsersInfo.swift in Sources */,
@@ -691,7 +661,6 @@
 				7FFB4C6C26B2B63800135823 /* DetailViewModel.swift in Sources */,
 				7FFB4C3726B046E300135823 /* ListPostsInteractor.swift in Sources */,
 				7FFB4C5C26B2B35F00135823 /* DetailViewController.swift in Sources */,
-				7FFB4C4E26B18C8B00135823 /* GetPostListFromLocalInteractorInjector.swift in Sources */,
 				7FFB4C5E26B2B36800135823 /* DefaultDetailViewController.swift in Sources */,
 				7FFB4C2F26B03EFD00135823 /* Endpoint.swift in Sources */,
 				7FFB4C7626B2C85100135823 /* GetCommentsInfo.swift in Sources */,
@@ -700,7 +669,6 @@
 				7FFB4BD026B0251800135823 /* CanaryPosts.xcdatamodeld in Sources */,
 				7FFB4C6026B2B39C00135823 /* DefaultDetailViewController+BuildComponents.swift in Sources */,
 				7FFB4C1C26B0309F00135823 /* ListPostsTableManager.swift in Sources */,
-				7FFB4C5126B18DDB00135823 /* ShouldGetDataFromLocalInteractor.swift in Sources */,
 				7FFB4C2426B0374100135823 /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
